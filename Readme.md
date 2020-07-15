@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван](https://up.htmlacademy.ru/adaptive/20/user/1432775).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Удод](https://up.htmlacademy.ru/adaptive/20/user/523387).
 
 ---
 
