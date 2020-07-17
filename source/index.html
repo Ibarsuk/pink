@@ -1,12 +1,77 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page-body">
+    <header class="page-header">
+      <div class="page-header__first-line">
+        <a href="#" class="page-header__logo-link">
+          <svg aria-label="Логотип приложения PINK">
+            <!-- Логотип -->
+          </svg>
+        </a>
+        <button type="button" name="nav-open" class="page-header__button page-header__button--open">
+          <img src="#" width="50" height="24" alt="Кнопка открытия меню">
+        </button>
+        <button type="button" name="nav-close" class="page-header__button page-header__button--close hidden">
+          <img src="#" width="23" height="23" alt="Кнопка закрытия меню">
+        </button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru" class="main-nav__link">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение PINK</h1>
+      <div class="bg-image">
+        <p class="bg-image__description">Взгляните на жизнь иначе!</p>
+      </div>
+      <section class="download">
+        <h2 class="visually-hidden">Как скачать приложение</h2>
+        <a href="#" class="download__link">Скачать приложение</a>
+        <div class="download__icons">
+          <img src="#" alt="Иконка операционной системы apple" width="47" height="56" class="download__icon download__icon--apple">
+          <img src="#" alt="Иконка операционной системы android" width="43" height="47" class="download__icon download__icon--android">
+          <img src="#" alt="Иконка операционной системы windows" width="44" height="41" class="download__icon download__icon--windows">
+        </div>
+        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <header class="advantages__slogan-list">
+          <p class="advantages__slogan-item">Устали от серости мегаполиса?</p>
+          <p class="advantages__slogan-item">Нам есть, что вам предложить!</p>
+        </header>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
