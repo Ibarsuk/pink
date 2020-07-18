@@ -19,7 +19,7 @@
           <img src="#" width="23" height="23" alt="Кнопка закрытия меню">
         </button>
       </div>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">Главная</a>
@@ -38,20 +38,26 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение PINK</h1>
-      <div class="bg-image">
+      <div class="page-main__bg bg-image">
         <p class="bg-image__description">Взгляните на жизнь иначе!</p>
       </div>
-      <section class="download">
+      <section class="page-main__download download">
         <h2 class="visually-hidden">Как скачать приложение</h2>
-        <a href="#" class="download__link">Скачать приложение</a>
+        <a href="https://www.apple.com/ru/ios/app-store/" class="download__link">Скачать приложение</a>
         <div class="download__icons">
-          <img src="#" alt="Иконка операционной системы apple" width="47" height="56" class="download__icon download__icon--apple">
-          <img src="#" alt="Иконка операционной системы android" width="43" height="47" class="download__icon download__icon--android">
-          <img src="#" alt="Иконка операционной системы windows" width="44" height="41" class="download__icon download__icon--windows">
+          <a href="#" class="download__link  download__link--apple">
+            <img src="https://www.apple.com/ru/ios/app-store/" alt="Иконка-ссылка app store" width="47" height="56" class="download__icon">
+          </a>
+          <a href="https://play.google.com/store/apps?hl=ru" class="download__link  download__link--android">
+            <img src="#" alt="Иконка-ссылка google play" width="43" height="47" class="download__icon">
+          </a>
+          <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="download__link  download__link--windows">
+            <img src="#" alt="Иконка-ссылка microsoft store" width="44" height="41" class="download__icon">
+          </a>
         </div>
         <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
-      <section class="advantages">
+      <section class="page-main__advantages advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <header class="advantages__slogan-list">
           <p class="advantages__slogan-item">Устали от серости мегаполиса?</p>
@@ -72,6 +78,92 @@
           </li>
         </ul>
       </section>
+      <section class="page-main__reviews reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__wrapper slider">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item slider__item--current">
+              <blockquote class="reviews__review">
+                <cite class="reviews__username">Николай Петров</cite>
+                <p class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles toggles">
+            <label>
+              <input type="radio" name="reviews-toggle" value="first-slide" class="toggles__input" checked>
+              <span class="toggles__span"></span>
+            </label>
+            <label>
+              <input type="radio" name="reviews-toggle" value="second-slide" class="toggles__input">
+              <span class="toggles__span"></span>
+            </label>
+            <label>
+              <input type="radio" name="reviews-toggle" value="third-slide" class="toggles__input">
+              <span class="toggles__span"></span>
+            </label>
+          </p>
+        </div>
+      </section>
+      <section class="page-main__contacts contacts">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p>
+              Звоните:<br>
+              <a href="tel:+78125556666" class="contacts__link">+7 (812) 555-66-66</a>
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p>
+              Пишите:<br>
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p>
+              Приезжайте в гости:<br>
+              <span class="contacts__link">ул. Большая Конюшенная, 19/8</span>
+            </p>
+          </li>
+        </ul>
+        <div class="contacts__map">
+          <iframe  class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595064364061!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </section>
     </main>
+    <footer class="page-footer">
+      <a href="#" aria-label="Логотип приложения PINK" class="page-footer__logo-link">
+        <svg>
+          <!-- Логотип-очки -->
+        </svg>
+        <svg>
+          <!-- Логотип -->
+        </svg>
+      </a>
+      <ul class="page-footer__nets-list">
+        <li class="page-footer__nets-item page-footer__nets-item--twitter">
+          <a href="#" class="page-footer__nets-link">
+            <img src="#" width="18" height="14" alt="Ссылка на наш twitter">
+          </a>
+        </li>
+        <li class="page-footer__nets-item page-footer__nets-item--facebook">
+          <a href="#" class="page-footer__nets-link">
+            <img src="#" width="9" height="18" alt="Ссылка на наш facebook">
+          </a>
+        </li>
+        <li class="page-footer__nets-item page-footer__nets-item--youtube">
+          <a href="#" class="page-footer__nets-link">
+            <img src="#" width="15" height="13" alt="Ссылка на наш youtube">
+          </a>
+        </li>
+      </ul>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer-copyright">
+        Разработано
+        <svg aria-label="Логотип html academy">
+          <!-- Логотип html academy -->
+        </svg>
+      </a>
+    </footer>
   </body>
 </html>
