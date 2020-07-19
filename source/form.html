@@ -19,7 +19,7 @@
           <img src="#" width="23" height="23" alt="Кнопка закрытия меню">
         </button>
       </div>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html" class="main-nav__link">Главная</a>
@@ -38,7 +38,119 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__title page-main__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
-
+      <p class="page-main__page-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <form class="page-main__contest-form contest-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="contest-form__name-fieldset name-fieldset">
+          <ul class="name-fieldset__input-list">
+            <li class="name-fieldset__input-item">
+              <label class="name-fieldset__label label--contest">
+                Фамилия:
+                <input class="name-fieldset__input input--contest" type="text" name="name" placeholder="Укажите Фамилию*" required>
+              </label>
+            </li>
+            <li class="name-fieldset__input-item">
+              <label class="name-fieldset__label label--contest">
+                Имя:
+                <input class="name-fieldset__input input--contest" type="text" name="surname" placeholder="Введите ваше имя*" required>
+              </label>
+            </li>
+            <li class="name-fieldset__input-item">
+              <label class="name-fieldset__label label--contest">
+                Отчество:
+                <input class="name-fieldset__input input--contest" type="text" name="patronymic" placeholder="Ну и отчество тоже*">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest-form__achievements-fieldset achievements-fieldset">
+          <legend class="achievements-fieldset__legend legend--contest">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="achievements-fieldset__input-list">
+            <li class="achievements-fieldset__input-item">
+              <label class="achievements-fieldset__label label--check-radio">
+                <input class="achievements-fieldset__input" type="checkbox" name="shark-selfie">
+                Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="achievements-fieldset__input-item">
+              <label class="achievements-fieldset__label label--check-radio">
+                <input class="achievements-fieldset__input" type="checkbox" name="burned">
+                Обгорел на пляже
+              </label>
+            </li>
+            <li class="achievements-fieldset__input-item">
+              <label class="achievements-fieldset__label label--check-radio">
+                <input class="achievements-fieldset__input" type="checkbox" name="seen-Chack">
+                Видел Чака Норриса
+              </label>
+            </li>
+            <li class="achievements-fieldset__input-item">
+              <label class="achievements-fieldset__label label--check-radio">
+                <input class="achievements-fieldset__input" type="checkbox" name="souvenirs">
+                Накупил сувениров
+              </label>
+            </li>
+            <li class="achievements-fieldset__input-item">
+              <label class="achievements-fieldset__label label--check-radio">
+                <input class="achievements-fieldset__input" type="checkbox" name="tower">
+                Удержал башню
+              </label>
+            </li>
+            <li class="achievements-fieldset__input-item">
+              <label class="achievements-fieldset__label label--check-radio">
+                <input class="achievements-fieldset__input" type="checkbox" name="hotel">
+                Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest-form__contacts-fieldset contact-fieldset">
+          <ul class="contact-fieldset__input-list">
+            <li class="contact-fieldset__input-item">
+              <label class="contact-fieldset__label label--contest">
+                Номер телефона
+                <input class="contact-fieldset__input input--contest" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+              </label>
+            </li>
+            <li class="contact-fieldset__input-item">
+              <label class="contact-fieldset__label label--contest">
+                Адрес почты
+                <input class="contact-fieldset__input input--contest" type="tel" name="mail" placeholder="Введите почту*" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest-form__app-fieldset app-fieldset">
+          <legend class="app-fieldset__legend legend--contest">С каким приложением путешествовали?</legend>
+          <ul class="app-fieldset__input-list">
+            <li class="app-fieldset__input-item">
+              <label class="app-fieldset__label label--check-radio">
+                <input type="radio" name="app-input" value="IOS">
+                Pink для iOS
+              </label>
+            </li>
+            <li class="app-fieldset__input-item">
+              <label class="app-fieldset__label label--check-radio">
+                <input type="radio" name="app-input" value="Android">
+                Pink на Android
+              </label>
+            </li>
+            <li class="app-fieldset__input-item">
+              <label class="app-fieldset__label label--check-radio">
+                <input type="radio" name="app-input" value="Windows-phone">
+                Windows Phone
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest-form__comment-fieldset comment-fieldset">
+          <legend class="comment-fieldset__legend legend--contest">Опишите свои эмоции</legend>
+          <textarea name="comment" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <button class="contest-form__submit-button" type="submit" name="contest-submit">Отправить форму</button>
+        <p class="contest-form__annotation annotation">
+          <span class="annotation__span">*</span> - обязательные поля
+        </p>
+      </form>
       <footer class="page-footer">
         <a href="index.html" aria-label="Логотип приложения PINK" class="page-footer__logo-link">
           <svg>
