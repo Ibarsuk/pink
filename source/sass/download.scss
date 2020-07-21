@@ -1,0 +1,19 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-1D2631);
+  padding-top: 28px;
+  padding-bottom: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.download__main-download-link {
+
+}
+
+.download__download-icons {
+  margin-top: 32px;
+}
