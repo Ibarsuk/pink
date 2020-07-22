@@ -1,0 +1,21 @@
+.download-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-family: Opensanslight;
+
+}
+
+.download-icons__list {
+  @include list-fix;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.download-icons__description {
+  text-align: center;
+}

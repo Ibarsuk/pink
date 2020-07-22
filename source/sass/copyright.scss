@@ -1,0 +1,17 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+.copyright__academy-icon {
+  margin-left: 15px;
+}
+
+.copyright__path {
+  fill: var(--dark-red);
+}

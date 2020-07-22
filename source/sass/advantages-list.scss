@@ -1,0 +1,31 @@
+.advantages-list {
+  @include list-fix;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grey-light);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 325px;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.advantages-list__title {
+  margin: 0;
+  margin-top: 43px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages-list__description {
+  margin: 0;
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
