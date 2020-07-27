@@ -1,0 +1,86 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prices__list {
+  @include list-fix;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prices__table {
+ border-collapse: collapse;
+}
+
+.prices__table-header {
+  padding: 0;
+  background-color: var(--dark-blue);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-width: 276px;
+}
+
+.prices__best-seller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 104px;
+  height: 23px;
+  background-color: var(--dark-red);
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--white);
+  transform: rotate(-45deg);
+  top: 15px;
+  left: -24px;
+}
+
+.prices__tariff-name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-top: 12px;
+}
+
+.prices__cost {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.prices__table-cell {
+  border: 2px solid var(--grey);
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.prices__yes {
+  fill: var(--green);
+}
+
+.prices__cross {
+  fill: var(--orange);
+}

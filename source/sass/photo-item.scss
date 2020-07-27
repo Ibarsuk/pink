@@ -78,10 +78,7 @@
 }
 
 .photo-item__request {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  @include input-cut;
 }
 
 .photo-item__like-check {

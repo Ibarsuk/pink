@@ -1,0 +1,33 @@
+.toggles {
+
+}
+
+.toggles__list {
+  @include list-fix;
+  display: flex;
+}
+
+.toggles__item {
+  position: relative;
+  margin-right: 19px;
+}
+
+.toggles__input {
+  @include input-cut;
+  &:checked + .toggles__span {
+    background-color: var(--white);
+    border: 3px solid var(--dark-blue);
+    opacity: 1;
+    top: -3px;
+    left: -3px;
+  }
+}
+
+.toggles__span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--dark-blue);
+  opacity: 0.3;
+  border-radius: 50%;
+}
