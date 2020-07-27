@@ -1,0 +1,19 @@
+.comment-request-group {
+  @include fieldset-fix;
+  padding-top: 42px;
+  padding-bottom: 52px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comment-request-group__comment {
+  border: 2px solid var(--grey);
+  border-radius: 1px;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--dark-blue);
+  padding: 22px 25px 22px 20px;
+  min-width: 276px;
+  min-height: 197px;
+  box-sizing: border-box;
+}

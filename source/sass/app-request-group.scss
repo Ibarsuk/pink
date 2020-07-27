@@ -1,0 +1,27 @@
+.app-request-group {
+  @include fieldset-fix;
+  background-color: var(--grey-light);
+  padding-top: 42px;
+  padding-left: 22px;
+  padding-right: 20px;
+}
+
+.app-request-group__request-list {
+  @include list-fix;
+}
+
+.app-request-group__request-item {
+  margin-bottom: 62px;
+}
+
+.app-request-group__request-container {
+  padding-left: 68px;
+}
+
+.app-request-group__request {
+  @include input-cut;
+}
+
+.app-request-group__check-radio {
+  margin-left: -68px;
+}

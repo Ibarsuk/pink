@@ -1,0 +1,9 @@
+.contact-request-group {
+  @include fieldset-fix;
+  padding-top: 42px;
+  padding-bottom: 15px;
+}
+
+.contact-request-group__request-list {
+  @include list-fix;
+}

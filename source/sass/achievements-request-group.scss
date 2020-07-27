@@ -1,0 +1,27 @@
+.achievements-request-group {
+  @include fieldset-fix;
+  background-color: var(--grey-light);
+  padding-top: 42px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.achievements-request-group__request-list {
+  @include list-fix;
+}
+
+.achievements-request-group__request-item {
+  margin-bottom: 47px;
+}
+
+.achievements-request-group__request-container {
+  padding-left: 57px;
+}
+
+.achievements-request-group__request {
+  @include input-cut;
+}
+
+.achievements-request-group__checkbox {
+  margin-left: -57px;
+}

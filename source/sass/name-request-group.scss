@@ -1,0 +1,14 @@
+.name-request-group {
+  @include fieldset-fix;
+  padding-bottom: 44px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.name-request-group__request-list {
+  @include list-fix;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
