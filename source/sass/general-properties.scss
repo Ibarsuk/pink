@@ -1,3 +1,7 @@
+$phone-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
 @mixin list-fix() {
   margin: 0;
   padding: 0;
@@ -5,6 +9,9 @@
 }
 
 @mixin fieldset-fix() {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
   border: none;
 }
@@ -31,4 +38,14 @@
 img {
   max-width: 100%;
   height: auto;
+}
+
+.width-wrapper {
+  margin: 0 auto;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 660px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }

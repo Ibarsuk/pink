@@ -2,6 +2,7 @@
 <html lang="ru" dir="ltr" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -56,13 +57,13 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__main-title-photo main-title-photo">Фотографии пользователей <span class="visually-hidden">приложения PINK</span></h1>
+      <h1 class="page-main__main-title-photo main-title-photo">Фотографии <br>пользователей <span class="visually-hidden">приложения PINK</span></h1>
       <section class="page-main__photos-scroll photos-scroll">
         <h2 class="visually-hidden">Лента фотографий пользователей</h2>
         <p class="photos-scrolldescription">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="photos-scrollphotos photos-list">
-          <li class="photos-list__item photo-item">
-            <a href="#" class="photo-item__img-container photo-item__img-container--day-panorama">
+          <li class="photos-list__item photo-item photo-item--day-panorama">
+            <a href="#" class="photo-item__img-container">
               <span class="photo-item__day-panorama">Панорама дня</span>
               <img src="../source/img/panorama-mobile@1x.jpg" alt="Фотография пользователя">
             </a>
@@ -239,53 +240,55 @@
           <div class="post-creation__photo">
             <img src="../source/img/photo-road-mobile@1x.jpg" alt="Фото, выбранное для публикации">
           </div>
-          <ul class="post-creation__options-list">
-            <li class="post-creation__options-item">
-              <button class="post-creation__button-option" type="button" name="crop-button">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="44px" height="44px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path class="post-creation__path post-creation__path--chosen" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                </svg>
-              </button>
-            </li>
-            <li class="post-creation__options-item">
-              <button class="post-creation__button-option" type="button" name="fill-button">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="43px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path class="post-creation__path" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                  <rect class="post-creation__path" y="40" width="48" height="3"/>
-                </svg>
-              </button>
-            </li>
-            <li class="post-creation__options-item">
-              <button class="post-creation__button-option" type="button" name="contrast-button">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                  <path class="post-creation__path" fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                  <path class="post-creation__path" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                </svg>
-              </button>
-            </li>
-          </ul>
-          <ul class="post-creation__range-list">
-            <li class="post-creation__range-item post-creation__range-item--crop post-creation__range-item--current">
-              <div class="post-creation__scale"></div>
-              <div class="post-creation__toggle post-creation__toggle--crop" tabindex="0"></div>
-            </li>
-            <li class="post-creation__range-item post-creation__range-item--fill">
-              <div class="post-creation__scale"></div>
-              <div class="post-creation__toggle post-creation__toggle--fill" tabindex="0"></div>
-            </li>
-            <li class="post-creation__range-item post-creation__range-item--contrast">
-              <div class="post-creation__scale"></div>
-              <div class="post-creation__toggle post-creation__toggle--contrast" tabindex="0"></div>
-            </li>
-          </ul>
-          <ul class="post-creation__buttons-list">
-            <li class="post-creation__buttons-item">
-              <button class="post-creation__button post-creation__button--submit" type="submit" name="post-creation-submit">Запостить</button>
-            </li>
-            <li class="post-creation__buttons-item">
-              <button class="post-creation__button post-creation__button--cancel" type="button" name="post-creation-cancel">Отмена</button>
-            </li>
-          </ul>
+          <div class="post-creation__flex-container">
+            <ul class="post-creation__options-list">
+              <li class="post-creation__options-item">
+                <button class="post-creation__button-option" type="button" name="crop-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="44px" height="44px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path class="post-creation__path post-creation__path--chosen" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                  </svg>
+                </button>
+              </li>
+              <li class="post-creation__options-item">
+                <button class="post-creation__button-option" type="button" name="fill-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="43px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path class="post-creation__path" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                    <rect class="post-creation__path" y="40" width="48" height="3"/>
+                  </svg>
+                </button>
+              </li>
+              <li class="post-creation__options-item">
+                <button class="post-creation__button-option" type="button" name="contrast-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path class="post-creation__path" fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path class="post-creation__path" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <ul class="post-creation__range-list">
+              <li class="post-creation__range-item post-creation__range-item--crop post-creation__range-item--current">
+                <div class="post-creation__scale"></div>
+                <div class="post-creation__toggle post-creation__toggle--crop" tabindex="0"></div>
+              </li>
+              <li class="post-creation__range-item post-creation__range-item--fill">
+                <div class="post-creation__scale"></div>
+                <div class="post-creation__toggle post-creation__toggle--fill" tabindex="0"></div>
+              </li>
+              <li class="post-creation__range-item post-creation__range-item--contrast">
+                <div class="post-creation__scale"></div>
+                <div class="post-creation__toggle post-creation__toggle--contrast" tabindex="0"></div>
+              </li>
+            </ul>
+            <ul class="post-creation__buttons-list">
+              <li class="post-creation__buttons-item">
+                <button class="post-creation__button post-creation__button--submit" type="submit" name="post-creation-submit">Запостить</button>
+              </li>
+              <li class="post-creation__buttons-item">
+                <button class="post-creation__button post-creation__button--cancel" type="button" name="post-creation-cancel">Отмена</button>
+              </li>
+            </ul>
+          </div>
         </form>
       </section>
     </main>

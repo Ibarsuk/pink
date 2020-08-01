@@ -1,8 +1,31 @@
 .contest-form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  max-width: 940px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0 20px;
+  }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.contest-form__button-annotation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  order: 6;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .contest-form__annotation {
@@ -17,4 +40,11 @@
 
 .contest-form__accent {
   color: var(--dark-red);
+}
+
+.contest-form__accent-hidden {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }

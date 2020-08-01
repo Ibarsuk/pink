@@ -2,6 +2,7 @@
 <html lang="ru" dir="ltr" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -59,69 +60,69 @@
       <div class="page-main__main-title-form main-title-form">
         <h1 class="main-title-form__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <p class="page-main__form-description form-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="page-main__form-description form-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form-description__hidden-text">Пожалуйста, заполните форму ниже:</span></p>
       <form class="page-main__contest-form contest-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="contest-form__name-request-group name-request-group">
           <ul class="name-request-group__request-list">
             <li class="name-request-group__request-item">
               <label class="name-request-group__request-container">
-                <span class="name-request-group__question question">Фамилия:</span><br>
+                <span class="name-request-group__question question">Фамилия:</span>
                 <input class="name-request-group__request request-text" type="text" name="name" placeholder="Укажите Фамилию*" required>
               </label>
             </li>
             <li class="name-request-group__request-item">
               <label class="name-request-group__request-container">
-                <span class="name-request-group__question question">Имя:</span><br>
+                <span class="name-request-group__question question">Имя:</span>
                 <input class="name-request-group__request request-text" type="text" name="surname" placeholder="Введите ваше имя*" required>
               </label>
             </li>
             <li class="name-request-group__request-item">
               <label class="name-request-group__request-container">
-                <span class="name-request-group__question question">Отчество:</span><br>
+                <span class="name-request-group__question question">Отчество:</span>
                 <input class="name-request-group__request request-text" type="text" name="patronymic" placeholder="Ну и отчество тоже*">
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="contest-form__achievements-request-group achievements-request-group">
-          <p class="achievements-request-group__request-title request-title">Ваши безбашенные достижения в путешествии</p>
+          <legend class="achievements-request-group__request-title request-title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="achievements-request-group__request-list">
-            <li class="achievements-request-group__request-item">
+            <li class="achievements-request-group__request-item achievements-request-group__request-item--shark-selfie">
               <label class="achievements-request-group__request-container question-check-radio">
                 <input class="achievements-request-group__request" type="checkbox" name="shark-selfie">
                 <span class="achievements-request-group__checkbox checkbox"></span>
                 Сделал селфи с акулой
               </label>
             </li>
-            <li class="achievements-request-group__request-item">
+            <li class="achievements-request-group__request-item achievements-request-group__request-item--burned">
               <label class="achievements-request-group__request-container question-check-radio">
                 <input class="achievements-request-group__request" type="checkbox" name="burned">
                 <span class="achievements-request-group__checkbox checkbox"></span>
                 Обгорел на пляже
               </label>
             </li>
-            <li class="achievements-request-group__request-item">
+            <li class="achievements-request-group__request-item achievements-request-group__request-item--seen-Chack">
               <label class="achievements-request-group__request-container question-check-radio">
                 <input class="achievements-request-group__request" type="checkbox" name="seen-Chack">
                 <span class="achievements-request-group__checkbox checkbox"></span>
                 Видел Чака Норриса
               </label>
             </li>
-            <li class="achievements-request-group__request-item">
+            <li class="achievements-request-group__request-item achievements-request-group__request-item--souvenirs">
               <label class="achievements-request-group__request-container question-check-radio">
                 <input class="achievements-request-group__request" type="checkbox" name="souvenirs">
                 <span class="achievements-request-group__checkbox checkbox"></span>
                 Накупил сувениров
               </label>
             </li>
-            <li class="achievements-request-group__request-item">
+            <li class="achievements-request-group__request-item achievements-request-group__request-item--tower">
               <label class="achievements-request-group__request-container question-check-radio">
                 <input class="achievements-request-group__request" type="checkbox" name="tower">
                 <span class="achievements-request-group__checkbox checkbox"></span>
                 Удержал башню
               </label>
             </li>
-            <li class="achievements-request-group__request-item">
+            <li class="achievements-request-group__request-item achievements-request-group__request-item--hotel">
               <label class="achievements-request-group__request-container question-check-radio">
                 <input class="achievements-request-group__request" type="checkbox" name="hotel">
                 <span class="achievements-request-group__checkbox checkbox"></span>
@@ -131,23 +132,24 @@
           </ul>
         </fieldset>
         <fieldset class="contest-form__contacts-request-group contact-request-group">
+          <legend class="contact-request-group__request-title request-title">Контактная информация</legend>
           <ul class="contact-request-group__request-list">
             <li class="contact-request-group__request-item">
               <label class="contact-request-group__request-container">
-                <span class="name-request-group__question question">Номер телефона</span><br>
+                <span class="contact-request-group__question question">Номер телефона</span>
                 <input class="contact-request-group__request request-text" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
               </label>
             </li>
             <li class="contact-request-group__request-item">
               <label class="contact-request-group__request-container">
-                <span class="name-request-group__question question">Адрес почты</span><br>
+                <span class="contact-request-group__question question">Адрес почты</span>
                 <input class="contact-request-group__request request-text" type="tel" name="mail" placeholder="Введите почту*" required>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="contest-form__app-request-group app-request-group">
-          <p class="app-request-group__request-title request-title">С каким приложением путешествовали?</p>
+          <legend class="app-request-group__request-title request-title">С каким приложением путешествовали?</legend>
           <ul class="app-request-group__request-list">
             <li class="app-request-group__request-item">
               <label class="app-request-group__request-container question-check-radio">
@@ -173,13 +175,15 @@
           </ul>
         </fieldset>
         <fieldset class="contest-form__comment-request-group comment-request-group">
-          <p class="comment-request-group__request-title request-title">Опишите свои эмоции</p>
+          <legend class="comment-request-group__request-title request-title">Опишите свои эмоции</legend>
           <textarea class="comment-request-group__comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="contest-form__submit-button submit-button" type="submit" name="contest-submit">Отправить форму</button>
-        <p class="contest-form__annotation">
-          <span class="contest-form__accent">*</span> - обязательные поля
-        </p>
+        <div class="contest-form__button-annotation">
+          <button class="contest-form__submit-button submit-button" type="submit" name="contest-submit">Отправить форму</button>
+          <p class="contest-form__annotation">
+            <span class="contest-form__accent">*</span> - обязательные <span class="contest-form__accent-hidden">для заполнения</span> поля
+          </p>
+        </div>
       </form>
       <footer class="page-footer">
         <a href="index.html" aria-label="Логотип приложения PINK" class="page-footer__logo-link logo-link">

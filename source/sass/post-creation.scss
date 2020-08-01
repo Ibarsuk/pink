@@ -16,9 +16,23 @@
 }
 
 .post-creation__form {
+  width: 100%;
+  max-width: 940px;
+  display: flex;
+  flex-direction: row;
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: var(--grey-light);
+  @media (max-width: $tablet-width) {
+    width: auto;
+    flex-direction: column;
+  }
+}
+
+.post-creation__flex-container {
+  width: 100%;
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .post-creation__photo {
@@ -73,6 +87,7 @@
 }
 
 .post-creation__toggle {
+  cursor: pointer;
   width: 14px;
   height: 14px;
   box-sizing: border-box;
@@ -86,14 +101,21 @@
 
 .post-creation__buttons-list {
   @include list-fix;
+  display: flex;
+  flex-direction: column;
   margin-top: 34px;
   border-top: 1px solid var(--grey);
   padding-top: 38px;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .post-creation__buttons-item {
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .post-creation__button {

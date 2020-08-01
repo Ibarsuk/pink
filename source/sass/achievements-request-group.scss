@@ -1,17 +1,52 @@
 .achievements-request-group {
   @include fieldset-fix;
+  width: 100%;
   background-color: var(--grey-light);
   padding-top: 42px;
   padding-left: 22px;
   padding-right: 22px;
+  @media (min-width: $tablet-width) {
+    order: 4;
+    background-color: var(--transparent);
+    border: 2px solid var(--grey);
+    margin-bottom: 50px;
+  }
 }
 
 .achievements-request-group__request-list {
   @include list-fix;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
 }
 
 .achievements-request-group__request-item {
   margin-bottom: 47px;
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    &--burned {
+      order: 3;
+    }
+    &--seen-Chack {
+      order: 1;
+    }
+    &--souvenirs {
+      order: 4;
+    }
+    &--tower {
+      order: 2;
+    }
+    &--hotel {
+      order: 5;
+    }
+  }
 }
 
 .achievements-request-group__request-container {

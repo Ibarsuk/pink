@@ -2,6 +2,8 @@
   font-size: 14px;
   line-height: 30px;
   color: var(--dark-red);
-  margin-left: 23px;
   text-transform: uppercase;
+  @media (max-width: $tablet-width) {
+    margin-left: 23px;
+  }
 }
