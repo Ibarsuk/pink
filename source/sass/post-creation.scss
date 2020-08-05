@@ -60,6 +60,10 @@
 
 .post-creation__path {
   opacity: 0.3;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
   &--chosen {
     fill: var(--dark-red);
     opacity: 1;
@@ -97,6 +101,9 @@
   position: absolute;
   top: -6px;
   left: 85%;
+  &:active {
+    background-color: var(--dark-red);
+  }
 }
 
 .post-creation__buttons-list {

@@ -39,7 +39,7 @@
 
 .download__width-limiter {
   width: 280px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 300px;
   }
 }

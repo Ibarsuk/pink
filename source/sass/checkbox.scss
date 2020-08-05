@@ -6,6 +6,13 @@
   border: 2px solid var(--grey);
   position: absolute;
   border-radius: 1px;
+  &:hover,
+  &:focus {
+    border-color: var(--dark-blue);
+  }
+  &:active {
+    border-color: var(--dark-red);
+  }
 }
 
 input:checked + .checkbox::before {

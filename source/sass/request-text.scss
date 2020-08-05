@@ -1,10 +1,19 @@
 .request-text {
   width: 100%;
   border: 2px solid var(--grey-light);
+  border-radius: 4px;
   padding: 10px 20px;
   font-size: 18px;
   line-height: 30px;
   color: var(--dark-blue);
   box-sizing: border-box;
   min-width: 214px;
+  outline-style: none;
+  &:hover,
+  &:focus {
+    border-color: var(--dark-blue);
+  }
+  &:active {
+    border-color: var(--dark-red);
+  }
 }

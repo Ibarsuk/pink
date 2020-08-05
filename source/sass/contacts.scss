@@ -64,6 +64,14 @@
   text-align: center;
   color: var(--dark-red);
   text-decoration: none;
+  &:hover,
+  &focus {
+    color: var(--dark-blue);
+    text-decoration: underline;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {

@@ -43,9 +43,9 @@ img {
 .width-wrapper {
   margin: 0 auto;
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    width: 660px;
+    max-width: 660px;
   }
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }

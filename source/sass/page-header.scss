@@ -1,23 +1,6 @@
 .page-header {
-  position: absolute;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.page-header__first-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--black-transparent);
-  padding: 0 20px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-
-  }
-}
-
-.page-header__button {
-  background-color: var(--transparent);
-  border: none;
 }
