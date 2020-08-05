@@ -1,19 +1,22 @@
 .photo-item {
+  box-sizing: border-box;
+  width: 300px;
+  max-width: 320px;
+  flex-grow: 1;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 10px;
+  &--day-panorama {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .photo-item__img-container {
-  margin-left: 20px;
-  margin-right: 20px;
-
-  &--day-panorama {
-    margin: 0;
-  }
+  display: block;
 }
 
 .photo-item__day-panorama {
@@ -33,21 +36,23 @@
 }
 
 .photo-item__user-comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-width: 280px;
+  min-height: 155px;
   color: var(--dark-blue);
   background-color: var(--grey-light);
   padding-left: 17px;
   padding-right: 17px;
   padding-top: 26px;
-  padding-bottom: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-bottom: 26px;
   box-sizing: border-box;
 }
 
 .photo-item__username-time {
   margin: 0;
-  margin-bottom: 14px;
 }
 
 .photo-item__username {
@@ -65,7 +70,7 @@
 
 .photo-item__comment {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: auto;
   font-size: 14px;
   line-height: 24px;
 }

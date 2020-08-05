@@ -1,9 +1,29 @@
 .app-request-group {
   @include fieldset-fix;
+  width: 100%;
   background-color: var(--grey-light);
-  padding-top: 42px;
-  padding-left: 22px;
-  padding-right: 20px;
+  @media (max-width: $tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 54px;
+    padding-left: 22px;
+    padding-right: 20px;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 60px;
+  }
+  @media (min-width: $tablet-width) {
+    order: -1;
+    background-color: var(--transparent);
+    border: 2px solid var(--grey);
+    margin-bottom: 50px;
+    padding-bottom: 66px;
+    padding-top: 61px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 74px;
+    width: 50%;
+    min-height: 297px;
+  }
 }
 
 .app-request-group__request-list {
@@ -12,6 +32,9 @@
 
 .app-request-group__request-item {
   margin-bottom: 62px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .app-request-group__request-container {

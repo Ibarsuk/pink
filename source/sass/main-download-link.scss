@@ -1,4 +1,8 @@
 .main-download-link {
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
@@ -6,6 +10,13 @@
   text-decoration: none;
   border: 3px solid var(--white);
   border-radius: 29px;
-  padding: 21px 39px;
-  letter-spacing: 1px;
+  padding: 15px 39px;
+  &:hover,
+  &:focus {
+    color: var(--dark-red);
+    background-color: var(--white);
+  }
+  &:active {
+    color: var(--dark-red-transparent)
+  }
 }

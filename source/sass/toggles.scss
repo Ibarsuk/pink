@@ -1,10 +1,7 @@
 .toggles {
-
-}
-
-.toggles__list {
-  @include list-fix;
-  display: flex;
+ background-color: black;
+ @include list-fix;
+ display: flex;
 }
 
 .toggles__item {
@@ -24,10 +21,17 @@
 }
 
 .toggles__span {
+  cursor: pointer;
   position: absolute;
   width: 6px;
   height: 6px;
   background-color: var(--dark-blue);
   opacity: 0.3;
   border-radius: 50%;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.1;
+  }
 }

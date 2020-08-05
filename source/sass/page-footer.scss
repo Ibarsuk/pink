@@ -1,15 +1,38 @@
 .page-footer {
+  box-sizing: border-box;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 40px 20px;
+  width: 100%;
+  max-width: 940px;
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
 }
 
 .page-footer__logo-link {
-  margin-bottom: 41px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  &:hover .logo-link__letter{
+    fill: var(--dark-red);
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__nets-list {
-  margin-bottom: 41px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
 }

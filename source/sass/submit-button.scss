@@ -1,9 +1,7 @@
 .submit-button {
-  margin-left: 20px;
-  margin-right: 20px;
   background-color: var(--green-2AAB6D);
   border: 2px solid var(--green-2AAB6D);
-  border-radius: 1px;
+  border-radius: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -12,4 +10,17 @@
   min-width: 276px;
   padding: 15px 45px;
   box-sizing: border-box;
+  &:hover,
+  &:focus {
+    background-color: var(--green-1C9B5E);
+    border-color: var(--green-1C9B5E);
+  }
+  &:active {
+    border-color: var(--dark-red);
+    color: var(--white-transparent);
+  }
+  &:disabled {
+    background-color: var(--grey);
+    border-color: var(--grey);
+  }
 }

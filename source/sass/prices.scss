@@ -3,6 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .prices__list {
@@ -83,4 +86,8 @@
 
 .prices__cross {
   fill: var(--orange);
+}
+
+.prices__toggles {
+  margin-top: 40px;
 }

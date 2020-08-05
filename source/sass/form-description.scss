@@ -1,8 +1,23 @@
 .form-description {
-  margin: 0;
+  margin: 0 auto;
   padding: 54px 20px 55px 20px;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
   color: var(--dark-blue);
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    max-width: 490px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 756px;
+  }
+}
+
+.form-description__hidden-text {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -1,9 +1,67 @@
 .contact-request-group {
+  width: 100%;
   @include fieldset-fix;
   padding-top: 42px;
   padding-bottom: 15px;
+  @media (max-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-bottom: 37px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: $tablet-width) {
+    border: 2px solid var(--grey);
+    margin-bottom: 50px;
+  }
+}
+
+.contact-request-group__request-title {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .contact-request-group__request-list {
   @include list-fix;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    align-items: center;
+  }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.contact-request-group__request-item {
+  width: 100%;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 80%;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 371px;
+  }
+}
+
+.contact-request-group__request-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact-request-group__question {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-top: 22px;
+  }
 }
