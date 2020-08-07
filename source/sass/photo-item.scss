@@ -1,7 +1,6 @@
 .photo-item {
+  width: 100%;
   box-sizing: border-box;
-  width: 300px;
-  max-width: 320px;
   flex-grow: 1;
   position: relative;
   display: flex;
@@ -9,14 +8,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    max-width: 320px;
+  }
   &--day-panorama {
     width: 100%;
     max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .photo-item__img-container {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .photo-item__day-panorama {
@@ -33,6 +40,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.photo-item__user-comment-wrapper {
+  width: 100%;
+  max-width: 940px;
+  box-sizing: border-box;
+  @media (max-width: $desktop-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .photo-item__user-comment {

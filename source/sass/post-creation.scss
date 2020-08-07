@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
+  width: 100%;
 }
 
 .post-creation__call {
@@ -24,7 +25,7 @@
   padding-bottom: 41px;
   background-color: var(--grey-light);
   @media (max-width: $tablet-width) {
-    width: auto;
+    width: inherit;
     flex-direction: column;
   }
 }
