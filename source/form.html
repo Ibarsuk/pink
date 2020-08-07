@@ -13,9 +13,9 @@
           <li class="main-nav__logo-button">
             <a href="#" class="page-header__logo-link">
               <picture>
-                <source media="(min-width: 1200px)" srcset="../source/img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="../source/img/logo-pink-white-tablet.svg">
-                <img src="../source/img/logo-pink-white-mobile.svg" alt="Логотип приложения" >
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения" >
               </picture>
             </a>
             <button aria-label="Кнопка открытия меню" type="button" name="nav-open" class="main-nav__toggle"></button>
@@ -63,53 +63,55 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="contest-form__achievements-request-group achievements-request-group">
-          <legend class="achievements-request-group__request-title request-title">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="achievements-request-group__request-list">
-            <li class="achievements-request-group__request-item achievements-request-group__request-item--shark-selfie">
-              <label class="achievements-request-group__request-container question-check-radio">
-                <input class="achievements-request-group__request" type="checkbox" name="shark-selfie">
-                <span class="achievements-request-group__checkbox checkbox"></span>
-                Сделал селфи с акулой
-              </label>
-            </li>
-            <li class="achievements-request-group__request-item achievements-request-group__request-item--burned">
-              <label class="achievements-request-group__request-container question-check-radio">
-                <input class="achievements-request-group__request" type="checkbox" name="burned">
-                <span class="achievements-request-group__checkbox checkbox"></span>
-                Обгорел на пляже
-              </label>
-            </li>
-            <li class="achievements-request-group__request-item achievements-request-group__request-item--seen-Chack">
-              <label class="achievements-request-group__request-container question-check-radio">
-                <input class="achievements-request-group__request" type="checkbox" name="seen-Chack">
-                <span class="achievements-request-group__checkbox checkbox"></span>
-                Видел Чака Норриса
-              </label>
-            </li>
-            <li class="achievements-request-group__request-item achievements-request-group__request-item--souvenirs">
-              <label class="achievements-request-group__request-container question-check-radio">
-                <input class="achievements-request-group__request" type="checkbox" name="souvenirs">
-                <span class="achievements-request-group__checkbox checkbox"></span>
-                Накупил сувениров
-              </label>
-            </li>
-            <li class="achievements-request-group__request-item achievements-request-group__request-item--tower">
-              <label class="achievements-request-group__request-container question-check-radio">
-                <input class="achievements-request-group__request" type="checkbox" name="tower">
-                <span class="achievements-request-group__checkbox checkbox"></span>
-                Удержал башню
-              </label>
-            </li>
-            <li class="achievements-request-group__request-item achievements-request-group__request-item--hotel">
-              <label class="achievements-request-group__request-container question-check-radio">
-                <input class="achievements-request-group__request" type="checkbox" name="hotel">
-                <span class="achievements-request-group__checkbox checkbox"></span>
-                Разгромил отель
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="contest-form__request-group-container contest-form__request-group-container--achievements">
+          <fieldset class="contest-form__achievements-request-group achievements-request-group">
+            <legend class="achievements-request-group__request-title request-title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="achievements-request-group__request-list">
+              <li class="achievements-request-group__request-item achievements-request-group__request-item--shark-selfie">
+                <label class="achievements-request-group__request-container question-check-radio">
+                  <input class="achievements-request-group__request" type="checkbox" name="shark-selfie">
+                  <span class="achievements-request-group__checkbox checkbox"></span>
+                  Сделал селфи с акулой
+                </label>
+              </li>
+              <li class="achievements-request-group__request-item achievements-request-group__request-item--burned">
+                <label class="achievements-request-group__request-container question-check-radio">
+                  <input class="achievements-request-group__request" type="checkbox" name="burned">
+                  <span class="achievements-request-group__checkbox checkbox"></span>
+                  Обгорел на пляже
+                </label>
+              </li>
+              <li class="achievements-request-group__request-item achievements-request-group__request-item--seen-Chack">
+                <label class="achievements-request-group__request-container question-check-radio">
+                  <input class="achievements-request-group__request" type="checkbox" name="seen-Chack">
+                  <span class="achievements-request-group__checkbox checkbox"></span>
+                  Видел Чака Норриса
+                </label>
+              </li>
+              <li class="achievements-request-group__request-item achievements-request-group__request-item--souvenirs">
+                <label class="achievements-request-group__request-container question-check-radio">
+                  <input class="achievements-request-group__request" type="checkbox" name="souvenirs">
+                  <span class="achievements-request-group__checkbox checkbox"></span>
+                  Накупил сувениров
+                </label>
+              </li>
+              <li class="achievements-request-group__request-item achievements-request-group__request-item--tower">
+                <label class="achievements-request-group__request-container question-check-radio">
+                  <input class="achievements-request-group__request" type="checkbox" name="tower">
+                  <span class="achievements-request-group__checkbox checkbox"></span>
+                  Удержал башню
+                </label>
+              </li>
+              <li class="achievements-request-group__request-item achievements-request-group__request-item--hotel">
+                <label class="achievements-request-group__request-container question-check-radio">
+                  <input class="achievements-request-group__request" type="checkbox" name="hotel">
+                  <span class="achievements-request-group__checkbox checkbox"></span>
+                  Разгромил отель
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="contest-form__contacts-request-group contact-request-group">
           <legend class="contact-request-group__request-title request-title">Контактная информация</legend>
           <ul class="contact-request-group__request-list">
@@ -127,32 +129,34 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="contest-form__app-request-group app-request-group">
-          <legend class="app-request-group__request-title request-title">С каким приложением путешествовали?</legend>
-          <ul class="app-request-group__request-list">
-            <li class="app-request-group__request-item">
-              <label class="app-request-group__request-container question-check-radio">
-                <input class="app-request-group__request" type="radio" name="app-input" value="IOS">
-                <span class="app-request-group__check-radio check-radio"></span>
-                Pink для iOS
-              </label>
-            </li>
-            <li class="app-request-group__request-item">
-              <label class="app-request-group__request-container question-check-radio">
-                <input class="app-request-group__request" type="radio" name="app-input" value="Android">
-                <span class="app-request-group__check-radio check-radio"></span>
-                Pink на Android
-              </label>
-            </li>
-            <li class="app-request-group__request-item">
-              <label class="app-request-group__request-container question-check-radio">
-                <input class="app-request-group__request" type="radio" name="app-input" value="Windows-phone">
-                <span class="app-request-group__check-radio check-radio"></span>
-                Windows Phone
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="contest-form__request-group-container contest-form__request-group-container--app">
+          <fieldset class="contest-form__app-request-group app-request-group">
+            <legend class="app-request-group__request-title request-title">С каким приложением путешествовали?</legend>
+            <ul class="app-request-group__request-list">
+              <li class="app-request-group__request-item">
+                <label class="app-request-group__request-container question-check-radio">
+                  <input class="app-request-group__request" type="radio" name="app-input" value="IOS">
+                  <span class="app-request-group__check-radio check-radio"></span>
+                  Pink для iOS
+                </label>
+              </li>
+              <li class="app-request-group__request-item">
+                <label class="app-request-group__request-container question-check-radio">
+                  <input class="app-request-group__request" type="radio" name="app-input" value="Android">
+                  <span class="app-request-group__check-radio check-radio"></span>
+                  Pink на Android
+                </label>
+              </li>
+              <li class="app-request-group__request-item">
+                <label class="app-request-group__request-container question-check-radio">
+                  <input class="app-request-group__request" type="radio" name="app-input" value="Windows-phone">
+                  <span class="app-request-group__check-radio check-radio"></span>
+                  Windows Phone
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="contest-form__comment-request-group comment-request-group">
           <legend class="comment-request-group__request-title request-title">Опишите свои эмоции</legend>
           <textarea class="comment-request-group__comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -167,8 +171,8 @@
       <footer class="page-footer">
         <a href="index.html" aria-label="Логотип приложения PINK" class="page-footer__logo-link logo-link">
           <picture>
-            <source media="(min-width: 1200px)" srcset="../source/img/logo-pink-blue-desktop.svg">
-            <img src="../source/img/logo-pink-blue-mobile.svg" alt="Логотип приложения PINK">
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения PINK">
           </picture>
         </a>
         <ul class="page-footer__nets-list nets-list">

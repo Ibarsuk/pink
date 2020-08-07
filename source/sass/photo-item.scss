@@ -20,13 +20,6 @@
   }
 }
 
-.photo-item--day-panorama .photo-item__user-comment {
-  @media (max-width: $tablet-width) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
 .photo-item__img-container {
   display: block;
   width: 100%;
@@ -47,6 +40,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.photo-item__user-comment-wrapper {
+  width: 100%;
+  max-width: 940px;
+  box-sizing: border-box;
+  @media (max-width: $desktop-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .photo-item__user-comment {

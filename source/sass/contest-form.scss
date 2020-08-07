@@ -15,6 +15,35 @@
   }
 }
 
+.contest-form__request-group-container {
+  width: 100%;
+  background-color: var(--grey-light);
+  @media (max-width: $tablet-width) {
+    padding-top: 42px;
+  }
+  @media (min-width: $tablet-width) {
+    background-color: var(--transparent);
+  }
+  &--app {
+    @media (max-width: $tablet-width) {
+      padding-bottom: 44px;
+    }
+    @media (min-width: $tablet-width) {
+      background-color: var(--transparent);
+      margin-bottom: 50px;
+      order: -1;
+    }
+    @media (min-width: $desktop-width) {
+      width: 50%;
+    }
+  }
+  &--achievements {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
+}
+
 .contest-form__button-annotation {
   width: 100%;
   display: flex;
