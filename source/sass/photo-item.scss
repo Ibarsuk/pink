@@ -102,13 +102,3 @@
 .photo-item__request {
   @include input-cut;
 }
-
-.photo-item__like-check {
-  width: 13px;
-  height: 12px;
-  background-image: url();
-}
-
-.photo-item__like-path {
-  fill: var(--dark-red);
-}

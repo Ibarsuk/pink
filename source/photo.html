@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
+    <svg style="display: none">
+      <symbol viewBox="521.939 473.064 12.545 11.99" id="icon-heart">
+        <path fill="#D22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+      </symbol>
+    </svg>
     <header class="page-header">
       <nav class="page-header__nav main-nav main-nav--opened">
         <ul class="main-nav__list">
@@ -46,6 +51,9 @@
             <a href="#" class="photo-item__img-container">
               <span class="photo-item__day-panorama">Панорама дня</span>
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop_1x.webp 1x, img/panorama-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet_1x.webp 1x, img/panorama-tablet_2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama-mobile_1x.webp 1x, img/panorama-mobile_2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
                 <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя">
@@ -61,10 +69,8 @@
                 <p class="photo-item__likes">
                   <label class="photo-item__like-label">
                     <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                    <svg class="photo-item__like-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                      <g>
-                        <path class="photo-item__like-path" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                      </g>
+                    <svg width="13px" height="12px">
+                      <use xlink:href="#icon-heart"></use>
                     </svg>
                   </label>
                   Нравится:
@@ -78,6 +84,9 @@
           <li class="photos-list__item photo-item">
             <a href="#" class="photo-item__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop_1x.webp 1x, img/photo-car-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet_1x.webp 1x, img/photo-car-tablet_2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile_1x.webp 1x, img/photo-car-mobile_2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                 <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя">
@@ -92,10 +101,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg class="photo-item__like-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                    <g>
-                      <path class="photo-item__like-path" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                    </g>
+                  <svg width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
                 Нравится:
@@ -106,6 +113,9 @@
           <li class="photos-list__item photo-item">
             <a href="#" class="photo-item__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop_1x.webp 1x, img/photo-drumset-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet_1x.webp 1x, img/photo-drumset-tablet_2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile_1x.webp 1x, img/photo-drumset-mobile_2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                 <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя">
@@ -120,10 +130,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg class="photo-item__like-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                    <g>
-                      <path class="photo-item__like-path" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                    </g>
+                  <svg width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
                 Нравится:
@@ -134,6 +142,9 @@
           <li class="photos-list__item photo-item">
             <a href="#" class="photo-item__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop_1x.webp 1x, img/photo-window-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet_1x.webp 1x, img/photo-window-tablet_2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile_1x.webp 1x, img/photo-window-mobile_2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                 <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя">
@@ -148,10 +159,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg class="photo-item__like-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                    <g>
-                      <path class="photo-item__like-path" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                    </g>
+                  <svg width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
                 Нравится:
@@ -162,6 +171,9 @@
           <li class="photos-list__item photo-item">
             <a href="#" class="photo-item__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop_1x.webp 1x, img/photo-fair-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet_1x.webp 1x, img/photo-fair-tablet_2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile_1x.webp 1x, img/photo-fair-mobile_2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                 <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя">
@@ -176,10 +188,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg class="photo-item__like-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                    <g>
-                      <path class="photo-item__like-path" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                    </g>
+                  <svg width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
                 Нравится:
@@ -190,6 +200,9 @@
           <li class="photos-list__item photo-item">
             <a href="#" class="photo-item__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop_1x.webp 1x, img/photo-pov-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet_1x.webp 1x, img/photo-pov-tablet_2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile_1x.webp 1x, img/photo-pov-mobile_2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                 <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя">
@@ -204,10 +217,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg class="photo-item__like-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                    <g>
-                      <path class="photo-item__like-path" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                    </g>
+                  <svg width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
                 Нравится:
@@ -218,6 +229,9 @@
           <li class="photos-list__item photo-item">
             <a href="#" class="photo-item__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop_1x.webp 1x, img/photo-wing-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet_1x.webp 1x, img/photo-wing-tablet_2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile_1x.webp 1x, img/photo-wing-mobile_2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                 <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя">
@@ -232,10 +246,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg class="photo-item__like-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                    <g>
-                      <path class="photo-item__like-path" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                    </g>
+                  <svg width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
                 Нравится:
@@ -251,6 +263,9 @@
         <form class="post-creation__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="post-creation__photo">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop_1x.webp 1x, img/photo-road-desktop_2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet_1x.webp 1x, img/photo-road-tablet_2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile_1x.webp 1x, img/photo-road-mobile_2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
               <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото, выбранное для публикации">
