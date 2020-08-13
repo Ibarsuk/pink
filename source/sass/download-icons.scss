@@ -5,6 +5,7 @@
 }
 
 .download-icons__list {
+  box-sizing: border-box;
   @include list-fix;
   width: 100%;
   display: flex;
@@ -12,7 +13,9 @@
   justify-content: space-around;
   @media (max-width: $tablet-width) {
     margin-top: 32px;
-    margin-bottom: 28px;
+    margin-bottom: 16px;
+    padding-left: 19px;
+    padding-right: 20px;
   }
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin-top: 46px;
@@ -25,6 +28,9 @@
 }
 
 .download-icons__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
   margin: 0;
   text-align: center;
   color: var(--white);

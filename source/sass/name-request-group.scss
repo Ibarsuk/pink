@@ -5,10 +5,10 @@
   @media (max-width: $tablet-width) {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 44px;
+    padding-bottom: 25px;
   }
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
   }
   @media (min-width: $desktop-width) {
     width: 50%;
@@ -29,12 +29,20 @@
 
 .name-request-group__request-item {
   width: 100%;
-  margin-bottom: 29px;
+  margin-bottom: 16px;
   @media (min-width: $tablet-width) {
-    margin-bottom: 56px;
+    margin-bottom: 51px;
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+.name-request-group__question {
+  margin-bottom: 5px;
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+    margin-bottom: -1px;
   }
 }
 
@@ -46,5 +54,19 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
+  }
+}
+
+.name-request-group__request {
+  word-spacing: 2px;
+  &--surname {
+    letter-spacing: 1px;
+    word-spacing: -5px;
+  }
+  &--name {
+    word-spacing: 3px;
+  }
+  &--patronymic {
+    word-spacing: 2px;
   }
 }

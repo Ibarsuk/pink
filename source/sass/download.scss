@@ -72,6 +72,7 @@
 
 
 .download__description {
+  box-sizing: border-box;
   font-family: Opensanslight;
   text-align: center;
   color: var(--white);
@@ -80,11 +81,12 @@
   font-weight: 300;
   margin: 0;
   @media (max-width: $tablet-width) {
-    padding-bottom: 320px;
-    padding-top: 95px;
+    min-height: 396px;
+    padding-bottom: 0px;
+    padding-top: 23px;
     background-repeat: no-repeat;
     background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position: center top;
+    background-position: center bottom;
     background-size: cover;
   }
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -105,8 +107,8 @@
   position: relative;
   @media (max-width: $tablet-width) {
     padding: 0 20px;
-    padding-top: 46px;
-    padding-bottom: 38px;
+    padding-top: 29px;
+    padding-bottom: 31px;
     &::before {
       content: url(../img/iphone-hand-mobile@1x.png);
       width: 320px;

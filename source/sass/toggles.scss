@@ -6,7 +6,10 @@
 
 .toggles__item {
   position: relative;
-  margin-right: 19px;
+  margin-right: 27px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .toggles__input {

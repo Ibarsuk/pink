@@ -1,7 +1,8 @@
 .main-title-photo {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-family: Opensanslight;
   font-weight: 300;
@@ -14,8 +15,9 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-position: top center;
   background-size: cover;
-  height: 235px;
+  min-height: 171px;
   margin: 0;
+  padding-top: 28px;
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     height: 440px;
