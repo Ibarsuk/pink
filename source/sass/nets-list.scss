@@ -2,11 +2,15 @@
   @include list-fix;
   display: flex;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 .nets-list__nets-item {
-  margin-left: 14px;
+  margin-left: 8px;
   margin-bottom: 14px;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .nets-list__nets-link {

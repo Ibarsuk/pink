@@ -1,7 +1,8 @@
 .main-title-form {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: var(--white);
   background-color: var(--dark-blue);
@@ -9,11 +10,12 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-position: top center;
   background-size: cover;
-  height: 235px;
+  min-height: 171px;
   margin: 0;
+  padding: 0 20px;
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-image: url(../img/bg-back-tablet@1x.jpg);
-    height: 440px;
+    min-height: 330px;
     font-size: 50px;
     line-height: 68px;
     @media (min-resolution: 2dppx) {
@@ -32,6 +34,8 @@
 }
 
 .main-title-form__text {
+  margin: 0;
+  margin-top: 28px;
   font-family: Opensanslight;
   font-weight: 300;
   font-size: 24px;
@@ -42,6 +46,7 @@
     font-size: 50px;
     line-height: 68px;
     max-width: 620px;
+    margin-top: 67px;
   }
   @media (min-width: $desktop-width) {
     font-size: 50px;

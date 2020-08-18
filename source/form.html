@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -46,19 +46,19 @@
             <li class="name-request-group__request-item">
               <label class="name-request-group__request-container">
                 <span class="name-request-group__question question">Фамилия:</span>
-                <input class="name-request-group__request request-text" type="text" name="name" placeholder="Укажите Фамилию*" required>
+                <input class="name-request-group__request name-request-group__request--surname request-text" type="text" name="name" placeholder="Укажите Фамилию*" required>
               </label>
             </li>
             <li class="name-request-group__request-item">
               <label class="name-request-group__request-container">
                 <span class="name-request-group__question question">Имя:</span>
-                <input class="name-request-group__request request-text" type="text" name="surname" placeholder="Введите ваше имя*" required>
+                <input class="name-request-group__request name-request-group__request--name request-text" type="text" name="surname" placeholder="Введите ваше имя*" required>
               </label>
             </li>
             <li class="name-request-group__request-item">
               <label class="name-request-group__request-container">
                 <span class="name-request-group__question question">Отчество:</span>
-                <input class="name-request-group__request request-text" type="text" name="patronymic" placeholder="Ну и отчество тоже*">
+                <input class="name-request-group__request name-request-group__request--patronymic request-text" type="text" name="patronymic" placeholder="Ну и отчество тоже*">
               </label>
             </li>
           </ul>
@@ -159,12 +159,13 @@
         </div>
         <fieldset class="contest-form__comment-request-group comment-request-group">
           <legend class="comment-request-group__request-title request-title">Опишите свои эмоции</legend>
-          <textarea class="comment-request-group__comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="comment-request-group__comment" name="comment" placeholder="Можно прям в красках, не
+стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="contest-form__button-annotation">
           <button class="contest-form__submit-button submit-button" type="submit" name="contest-submit">Отправить форму</button>
           <p class="contest-form__annotation">
-            <span class="contest-form__accent">*</span> - обязательные <span class="contest-form__accent-hidden">для заполнения</span> поля
+            <span class="contest-form__accent">*</span> — обязательные <span class="contest-form__accent-hidden">для заполнения</span> поля
           </p>
         </div>
       </form>

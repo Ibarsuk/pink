@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  /*align-items: center;*/
   max-width: 940px;
   margin: 0 auto;
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -19,18 +19,18 @@
   width: 100%;
   background-color: var(--grey-light);
   @media (max-width: $tablet-width) {
-    padding-top: 42px;
+    padding-top: 39px;
   }
   @media (min-width: $tablet-width) {
     background-color: var(--transparent);
   }
   &--app {
     @media (max-width: $tablet-width) {
-      padding-bottom: 44px;
+      padding-bottom: 46px;
     }
     @media (min-width: $tablet-width) {
       background-color: var(--transparent);
-      margin-bottom: 50px;
+      margin-bottom: 59px;
       order: -1;
     }
     @media (min-width: $desktop-width) {
@@ -58,7 +58,7 @@
 }
 
 .contest-form__annotation {
-  margin-top: 46px;
+  margin-top: 34px;
   margin-bottom: 26px;
   text-align: center;
   font-size: 14px;

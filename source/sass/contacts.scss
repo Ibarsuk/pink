@@ -1,4 +1,5 @@
 .contacts {
+  padding-top: 41px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,11 +7,14 @@
 }
 
 .contacts__title {
+  word-spacing: -2px;
+  margin: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   color: var(--dark-blue);
+  margin-bottom: 34px;
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     font-size: 40px;
     line-height: 54px;
@@ -44,12 +48,18 @@
   min-width: 206px;
   flex-grow: 1;
   padding: 0 21px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   @media (max-width: $tablet-width) {
     margin-right: 0px;
+    margin-bottom: 17px;
   }
 }
 
 .contacts__line {
+  margin: 0;
+  letter-spacing: 1px;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -58,6 +68,8 @@
 }
 
 .contacts__link {
+  font-family: "Opensanslight";
+  letter-spacing: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;

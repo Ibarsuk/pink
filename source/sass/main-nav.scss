@@ -42,6 +42,10 @@
   }
 }
 
+.main-nav__logo-link {
+  margin-top: 7px;
+}
+
 .main-nav--opened .main-nav__item {
   display: block;
 }
@@ -52,6 +56,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    min-height: 109px;
+  }
   @media (max-width: $desktop-width) {
     background-color: var(--black-transparent);
   }
@@ -99,6 +106,8 @@
 }
 
 .main-nav__link {
+  letter-spacing: 1px;
+  word-spacing: -4px;
   padding: 16px 0;
   text-align: center;
   display: block;
