@@ -9,19 +9,12 @@
   @media (min-width: $tablet-width) {
     background-color: var(--transparent);
     border: 2px solid var(--grey);
-    margin-bottom: 58px;
-    padding-left: 60px;
-    padding-top: 47px;
-    padding-bottom: 9px;
-    padding-right: 51px;
+    margin-bottom: 50px;
   }
 }
 
 .achievements-request-group__request-title {
   max-width: 252px;
-  @media (min-width: $tablet-width) {
-    max-width: none;
-  }
 }
 
 .achievements-request-group__request-list {
@@ -33,7 +26,8 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+
   }
 }
 
@@ -43,8 +37,7 @@
     margin-bottom: 0;
   }
   @media (min-width: $desktop-width) {
-    box-sizing: border-box;
-    width: 33%;
+    width: 30%;
     &--burned {
       order: 3;
     }
@@ -64,10 +57,7 @@
 }
 
 .achievements-request-group__request-container {
-  width: 100%;
-  max-width: 100%;
   padding-left: 57px;
-  box-sizing: border-box;
 }
 
 .achievements-request-group__request {

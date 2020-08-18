@@ -3,9 +3,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
 }
 
 .nets-list__nets-item {

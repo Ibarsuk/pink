@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 29px;
+  padding-top: 40px;
   width: 100%;
 }
 
@@ -13,11 +13,10 @@
   text-align: center;
   color: var(--dark-blue);
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 52px;
 }
 
 .post-creation__form {
-  margin-bottom: 10px;
   width: 100%;
   max-width: 940px;
   display: flex;
@@ -47,7 +46,6 @@
 .post-creation__photo {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 38px;
 }
 
 .post-creation__options-list {
@@ -55,9 +53,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  padding-left: 39px;
-  padding-right: 49px;
+  margin-top: 42px;
+  margin-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -84,7 +83,6 @@
 
 .post-creation__range-list {
   @include list-fix;
-  margin-top: 33px;
   padding-left: 40px;
   padding-right: 40px;
   @media (min-width: $tablet-width) {
@@ -162,7 +160,7 @@
   border-radius: 50%;
   position: absolute;
   top: -6px;
-  left: 81%;
+  left: 85%;
   &:active {
     background-color: var(--dark-red);
   }
