@@ -13,6 +13,9 @@
   &:active .copyright__path {
     opacity: 0.3;
   }
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__academy-icon {

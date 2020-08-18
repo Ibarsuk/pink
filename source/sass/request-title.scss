@@ -5,4 +5,8 @@
   text-transform: uppercase;
   color: var(--dark-red);
   margin: 0;
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
