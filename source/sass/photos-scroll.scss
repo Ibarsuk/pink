@@ -9,4 +9,18 @@
   line-height: 30px;
   color: var(--dark-blue);
   text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-top: 91px;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    max-width: 570px;
+    margin: 0 auto;
+    padding-bottom: 67px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 642px;
+    margin: 0 auto;
+    padding-bottom: 79px;
+  }
 }

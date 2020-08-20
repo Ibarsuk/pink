@@ -17,6 +17,12 @@
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      margin-bottom: 30px;
+      &--day-panorama img {
+        height: fit-content;
+      }
+    }
   }
 }
 
@@ -25,6 +31,11 @@
   display: block;
   width: 100%;
   height: auto;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .photo-item--day-panorama & {
+      min-height: 509px;
+    }
+  }
 }
 
 .photo-item__day-panorama {
@@ -44,6 +55,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    top: 57px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
 }
 
 .photo-item__user-comment-wrapper {
@@ -70,6 +88,22 @@
   padding-top: 18px;
   padding-bottom: 18px;
   box-sizing: border-box;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 30px;
+    padding-top: 22px;
+    min-height: 155px;
+    padding-bottom: 22px;
+    justify-content: flex-start;
+    .photo-item--day-panorama & {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 22px;
+      padding-left: 31px;
+      padding-bottom: 14px;
+      min-height: 121px;
+      justify-content: space-between;
+    }
+  }
 }
 
 .photo-item__username-time {
@@ -97,6 +131,11 @@
   margin-bottom: 11px;
   font-size: 14px;
   line-height: 24px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .photo-item--day-panorama & {
+      order: 3;
+    }
+  }
 }
 
 .photo-item__likes {
@@ -105,10 +144,34 @@
   line-height: 24px;
   color: var(--dark-red);
   text-transform: uppercase;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 18px;
+    margin-top: auto;
+  }
 }
 
 .photo-item__like-label {
   margin-right: 15px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    order: 1;
+    margin-left: 16px;
+    margin-right: 0;
+  }
+}
+
+.photo-item__like-counter-wrapper {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-transform: inherit;
+}
+
+.photo-item__like-counter {
+  .photo-item--day-panorama & {
+    margin-left: 3px;
+  }
 }
 
 .photo-item__request {

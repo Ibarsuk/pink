@@ -43,9 +43,16 @@
   }
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    width: 88%;
-    min-width: 81%;
-    min-height: 128px;
     word-spacing: -2px;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 81%;
+    min-width: 81%;
+    min-height: 193px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 88%;
+    max-width: 88%;
+    min-height: 128px;
   }
 }

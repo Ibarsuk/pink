@@ -13,9 +13,12 @@
   }
   @media (min-width: $tablet-width) {
     border: 2px solid var(--grey);
-    margin-bottom: 55px;
+    margin-bottom: 59px;
     order: 1;
-    padding-bottom: 0px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 56px;
   }
 }
 
