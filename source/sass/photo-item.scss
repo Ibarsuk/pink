@@ -12,6 +12,10 @@
     width: 300px;
     max-width: 320px;
   }
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
   &--day-panorama {
     width: 100%;
     max-width: 100%;
@@ -88,7 +92,7 @@
   padding-top: 18px;
   padding-bottom: 18px;
   box-sizing: border-box;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-top: 22px;
     min-height: 155px;
@@ -102,6 +106,9 @@
       padding-bottom: 14px;
       min-height: 121px;
       justify-content: space-between;
+      @media (min-width: $tablet-width) {
+        min-height: 96px;
+      }
     }
   }
 }
@@ -131,7 +138,7 @@
   margin-bottom: 11px;
   font-size: 14px;
   line-height: 24px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     .photo-item--day-panorama & {
       order: 3;
     }
@@ -144,7 +151,7 @@
   line-height: 24px;
   color: var(--dark-red);
   text-transform: uppercase;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     margin-right: 18px;
@@ -154,7 +161,7 @@
 
 .photo-item__like-label {
   margin-right: 15px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     order: 1;
     margin-left: 16px;
     margin-right: 0;
