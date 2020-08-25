@@ -4,4 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-top: 47px;
+  }
 }

@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .contacts__title {
@@ -93,4 +94,5 @@
 .contacts__map-iframe {
   width: 100%;
   border: none;
+  max-height: 233px;
 }

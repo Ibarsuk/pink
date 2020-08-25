@@ -29,7 +29,7 @@
   box-sizing: border-box;
   background-repeat: no-repeat;
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    min-height: 729px;
+    min-height: 619px;
     background-image: url(../img/iphone-hand-tablet@1x.png);
     background-position: center bottom;
   }
@@ -47,9 +47,7 @@
   justify-content: space-between;
   align-items: center;
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    min-height: 729px;
     align-items: flex-start;
-    min-height: 729px;
   }
   @media (min-width: $desktop-width) {
     align-items: flex-start;
@@ -59,9 +57,6 @@
 
 .download__width-limiter {
   width: 100%;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    min-height: 729px;
-  }
   @media (min-width: $tablet-width) {
     width: 300px;
   }
@@ -90,8 +85,10 @@
     background-size: cover;
   }
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    margin-bottom: 39px;
-    margin-top: 212px;
+    margin: 0 auto;
+    max-width: 247px;
+    margin-bottom: 30px;
+    margin-top: 94px;
     font-size: 40px;
     line-height: 48px;
   }

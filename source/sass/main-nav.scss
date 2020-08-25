@@ -52,6 +52,9 @@
 
 .main-nav__logo-link {
   margin-top: 7px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .main-nav--opened .main-nav__item {
