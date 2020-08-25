@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page-body">
@@ -74,14 +76,14 @@
                     </svg>
                   </label>
                   Нравится:
-                  <output name="like-counter">215</output>
+                  <output class="photo-item__like-counter" name="like-counter">215</output>
                 </p>
               </div>
             </div>
           </div>
         </section>
         <ul class="photos-scrollphotos photos-list">
-          <li class="photos-list__item photo-item">
+          <li class="photos-list__item photo-item photo-item--car">
             <a href="#" class="photo-item__img-container">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop_1x.webp 1x, img/photo-car-desktop_2x.webp 2x">
@@ -105,12 +107,14 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
-                Нравится:
-                <output name="like-counter">356</output>
+                <span>
+                  Нравится:
+                  <output class="photo-item__like-counter" name="like-counter">356</output>
+                </span>
               </p>
             </div>
           </li>
-          <li class="photos-list__item photo-item">
+          <li class="photos-list__item photo-item photo-item--drumset">
             <a href="#" class="photo-item__img-container">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop_1x.webp 1x, img/photo-drumset-desktop_2x.webp 2x">
@@ -134,12 +138,14 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
-                Нравится:
-                <output name="like-counter">666</output>
+                <span>
+                  Нравится:
+                  <output class="photo-item__like-counter" name="like-counter">666</output>
+                </span>
               </p>
             </div>
           </li>
-          <li class="photos-list__item photo-item">
+          <li class="photos-list__item photo-item photo-item--window">
             <a href="#" class="photo-item__img-container">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop_1x.webp 1x, img/photo-window-desktop_2x.webp 2x">
@@ -163,12 +169,14 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
-                Нравится:
-                <output name="like-counter">215</output>
+                <span>
+                  Нравится:
+                  <output class="photo-item__like-counter" name="like-counter">215</output>
+                </span>
               </p>
             </div>
           </li>
-          <li class="photos-list__item photo-item">
+          <li class="photos-list__item photo-item photo-item--fair">
             <a href="#" class="photo-item__img-container">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop_1x.webp 1x, img/photo-fair-desktop_2x.webp 2x">
@@ -192,12 +200,14 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
-                Нравится:
-                <output name="like-counter">4</output>
+                <span>
+                  Нравится:
+                  <output class="photo-item__like-counter" name="like-counter">4</output>
+                </span>
               </p>
             </div>
           </li>
-          <li class="photos-list__item photo-item">
+          <li class="photos-list__item photo-item photo-item--pov">
             <a href="#" class="photo-item__img-container">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop_1x.webp 1x, img/photo-pov-desktop_2x.webp 2x">
@@ -221,12 +231,14 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
-                Нравится:
-                <output name="like-counter">150</output>
+                <span>
+                  Нравится:
+                  <output class="photo-item__like-counter" name="like-counter">150</output>
+                </span>
               </p>
             </div>
           </li>
-          <li class="photos-list__item photo-item">
+          <li class="photos-list__item photo-item photo-item--wing">
             <a href="#" class="photo-item__img-container">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop_1x.webp 1x, img/photo-wing-desktop_2x.webp 2x">
@@ -250,8 +262,10 @@
                     <use xlink:href="#icon-heart"></use>
                   </svg>
                 </label>
-                Нравится:
-                <output name="like-counter">2560</output>
+                <span>
+                  Нравится:
+                  <output class="photo-item__like-counter" name="like-counter">2560</output>
+                </span>
               </p>
             </div>
           </li>
@@ -314,10 +328,10 @@
               </ul>
             </div>
             <ul class="post-creation__buttons-list">
-              <li class="post-creation__buttons-item">
+              <li class="post-creation__buttons-item post-creation__buttons-item--submit">
                 <button class="post-creation__button post-creation__button--submit" type="submit" name="post-creation-submit">Запостить</button>
               </li>
-              <li class="post-creation__buttons-item">
+              <li class="post-creation__buttons-item post-creation__buttons-item--cancel">
                 <button class="post-creation__button post-creation__button--cancel" type="button" name="post-creation-cancel">Отмена</button>
               </li>
             </ul>

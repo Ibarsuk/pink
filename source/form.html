@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page-body">
@@ -116,13 +118,13 @@
           <legend class="contact-request-group__request-title request-title">Контактная информация</legend>
           <ul class="contact-request-group__request-list">
             <li class="contact-request-group__request-item">
-              <label class="contact-request-group__request-container">
+              <label class="contact-request-group__request-container contact-request-group__request-container--number">
                 <span class="contact-request-group__question question">Номер телефона</span>
                 <input class="contact-request-group__request request-text" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
               </label>
             </li>
             <li class="contact-request-group__request-item">
-              <label class="contact-request-group__request-container">
+              <label class="contact-request-group__request-container contact-request-group__request-container--mail">
                 <span class="contact-request-group__question question">Адрес почты</span>
                 <input class="contact-request-group__request request-text" type="tel" name="mail" placeholder="Введите почту*" required>
               </label>
@@ -159,8 +161,7 @@
         </div>
         <fieldset class="contest-form__comment-request-group comment-request-group">
           <legend class="comment-request-group__request-title request-title">Опишите свои эмоции</legend>
-          <textarea class="comment-request-group__comment" name="comment" placeholder="Можно прям в красках, не
-стесняясь в выражениях"></textarea>
+          <textarea class="comment-request-group__comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="contest-form__button-annotation">
           <button class="contest-form__submit-button submit-button" type="submit" name="contest-submit">Отправить форму</button>
@@ -210,6 +211,24 @@
           </svg>
         </a>
       </footer>
+      <section class="page-error notification" style="display: none">
+        <h2 class="page-error__title notification__title">Что-то пошло не так!</h2>
+        <p class="page-error__description notification__description">Проверьте поля, выделенные красным,
+  скорее всего вы забыли их заполнить</p>
+        <div class="page-error__button-container notification__button-container">
+          <button type="button" name="button-close" class="notification__submit-button submit-button">Ок</button>
+        </div>
+      </section>
+      <section class="notification page-success" style="display: none">
+        <h2 class="page-success__title notification__title">Ваша заявка отправлена</h2>
+        <p class="page-success__description notification__description">Спасибо за ваше участие, ваша заявка
+уже поступила к нам. В ближайшее
+время мы рассмотрим ее и
+оповестим вас.</p>
+        <div class="page-success__button-container notification__button-container">
+          <button type="button" name="button-close" class="notification__submit-button submit-button">Закрыть окно</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>

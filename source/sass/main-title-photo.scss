@@ -20,9 +20,10 @@
   padding-top: 28px;
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-image: url(../img/bg-back-tablet@1x.jpg);
-    height: 440px;
+    min-height: 330px;
     font-size: 50px;
     line-height: 68px;
+    padding-top: 66px;
     @media (min-resolution: 2dppx) {
       background-image: url(../img/bg-back-tablet@2x.jpg);
     }
@@ -32,6 +33,7 @@
     height: 394px;
     font-size: 50px;
     line-height: 68px;
+    padding-top: 169px;
     @media (min-resolution: 2dppx) {
       background-image: url(../img/bg-back-desktop@2x.jpg);
     }
