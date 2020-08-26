@@ -25,7 +25,7 @@
   margin: 0;
   &--first {
     margin-bottom: 29px;
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
   }

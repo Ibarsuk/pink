@@ -5,6 +5,12 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-top: 43px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+  }
 }
 
 .contacts__title {
@@ -19,10 +25,13 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     font-size: 40px;
     line-height: 54px;
+    font-family: "Opensanslight";
   }
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
+    font-family: "Opensanslight";
+    margin-bottom: 40px;
   }
 }
 
@@ -40,8 +49,15 @@
     flex-direction: column;
   }
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 18px;
+    min-height: 193px;
+    align-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    max-width: 1200px;
+    padding-left: 124px;
+    padding-right: 109px;
   }
 }
 
@@ -56,16 +72,36 @@
     margin-right: 0px;
     margin-bottom: 19px;
   }
+  @media (min-width: $desktop-width) {
+    &--mail {
+      order: 1;
+    }
+  }
 }
 
 .contacts__line {
   margin: 0;
-  letter-spacing: 1px;
-  font-weight: bold;
+  font-family: "Opensansbold";
   font-size: 18px;
   line-height: 25px;
   text-align: center;
   color: var(--dark-blue);
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 78px;
+  }
+  &--addres {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-left: -16px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-left: 11px;
+      min-height: 111px;
+    }
+  }
 }
 
 .contacts__link {
@@ -95,4 +131,10 @@
   width: 100%;
   border: none;
   max-height: 233px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    max-height: 395px;
+  }
+  @media (min-width: $desktop-width) {
+    min-height: 549px;
+  }
 }

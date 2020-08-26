@@ -23,8 +23,9 @@
     padding: 0 30px;
   }
   @media (min-width: $desktop-width) {
-    margin-top: 67px;
-    margin-bottom: 58px;
+    margin-top: 71px;
+    margin-bottom: 44px;
+    padding: 0 30px;
   }
 }
 
@@ -36,7 +37,7 @@
   text-align: center;
   color: var(--white);
   font-family: "Opensanslight";
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
   }
 }

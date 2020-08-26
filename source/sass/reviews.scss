@@ -1,5 +1,24 @@
 .reviews {
   padding: 41px 20px 38px 20px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 22px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 184px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      opacity: 0.1;
+      width: 79px;
+      height: 68px;
+      top: 72px;
+      left: 47%;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 79 63' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+  }
 }
 
 .reviews__wrapper {
@@ -12,15 +31,22 @@
 .reviews__desktop-controls {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .reviews__desktop-control {
-  margin-top: 42px;
+  margin-top: 28px;
   border: none;
   background-color: var(--transparent);
   cursor: pointer;
   display: none;
   opacity: 0.3;
+  &--left {
+    margin-right: 100px;
+  }
+  &--right {
+    margin-left: 100px;
+  }
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -68,6 +94,16 @@
     order: -1;
     margin-bottom: 13px;
   }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    font-family: "Opensansbold";
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+  @media (min-width: $desktop-width) {
+    font-family: "Opensansbold";
+    font-size: 24px;
+    letter-spacing: 0;
+  }
 }
 
 .reviews__userjob {
@@ -76,6 +112,14 @@
   color: var(--dark-blue);
   @media (max-width: $tablet-width) {
     display: none;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    font-family: "Opensanslight";
+    margin-top: 0px;
+  }
+  @media (min-width: $desktop-width) {
+    font-family: "Opensanslight";
+    font-size: 18px;
   }
 }
 
@@ -88,9 +132,15 @@
   margin-bottom: 50px;
   font-size: 18px;
   line-height: 30px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
   @media (max-width: $tablet-width) {
     margin-bottom: 0;
     font-size: 14px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
   }
 }
 
