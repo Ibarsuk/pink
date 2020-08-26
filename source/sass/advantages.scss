@@ -27,7 +27,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       height: 52px;
-      @media (max-width: $tablet-width) {
+      @media (max-width: $phone-width) {
         top: -20px;
       }
       @media (min-width: $desktop-width) {

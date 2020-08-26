@@ -20,14 +20,14 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1200 94.074' enable-background='new 0 0 1200 94.074' xml:space='preserve'%3E%3Cpolygon fill='%23ffffff' points='1200,0 0,0 0,94.074 '/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: cover;
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       height: 52px;
     }
     @media (min-width: $desktop-width) {
       height: 95px;
     }
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-bottom: 70px;
     padding-top: 101px;
   }
@@ -46,7 +46,7 @@
 
 .prices__item--description-column {
   align-self: flex-end;
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     display: none;
   }
 }
@@ -67,7 +67,7 @@
   overflow: hidden;
   min-width: 276px;
   min-height: 98px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     min-width: 154px;
     min-height: 78px;
     border-right: 1px solid var(--grey);
@@ -138,7 +138,7 @@
   padding-left: 18px;
   padding-right: 15px;
   min-height: 61px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     min-height: 47px;
   }
   @media (min-width: $tablet-width) {

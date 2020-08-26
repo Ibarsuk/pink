@@ -18,7 +18,7 @@
     background-image: url(../img/iphone-screen-mobile@2x.png);
     background-size: 157px auto;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     align-items: flex-end;
     padding-bottom: 42px;
     padding-top: 76px;
@@ -45,7 +45,7 @@
   &:first-child {
     margin-top: 0;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-top: 34px;
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     text-align: left;
   }
   @media (min-width: $desktop-width) {

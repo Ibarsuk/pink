@@ -1,6 +1,6 @@
 .reviews {
   padding: 41px 20px 38px 20px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-top: 100px;
     padding-bottom: 22px;
   }
@@ -90,11 +90,11 @@
   line-height: 30px;
   text-align: center;
   color: var(--black);
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     order: -1;
     margin-bottom: 13px;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     font-family: "Opensansbold";
     font-size: 20px;
     letter-spacing: 0;
@@ -110,10 +110,10 @@
   font-size: 14px;
   line-height: 30px;
   color: var(--dark-blue);
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     display: none;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     font-family: "Opensanslight";
     margin-top: 0px;
   }
@@ -132,10 +132,10 @@
   margin-bottom: 50px;
   font-size: 18px;
   line-height: 30px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-bottom: 36px;
   }
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     margin-bottom: 0;
     font-size: 14px;
   }

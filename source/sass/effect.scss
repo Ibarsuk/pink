@@ -1,5 +1,5 @@
 .effect {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     display: none;
   }
   @media (min-width: $desktop-width) {
@@ -42,7 +42,7 @@
       left: 23px;
     }
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-bottom: 22px;
     padding-top: 96px;
     padding-left: 311px;
@@ -65,7 +65,7 @@
   font-family: "Opensansbold";
   font-size: 30px;
   line-height: 36px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-bottom: 10px;
   }
   @media (min-width: $desktop-width) {
@@ -76,7 +76,7 @@
 
 .effect__title br {
   display: none;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     display: inline;
   }
 }
@@ -90,7 +90,7 @@
     font-size: 18px;
     line-height: 30px;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin: 0;
     margin-bottom: 10px;
   }

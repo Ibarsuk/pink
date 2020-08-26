@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     align-items: flex-start;
     background-image: url(../img/bg-back-tablet@1x.jpg);
     @media (min-resolution: 2dppx) {
@@ -28,7 +28,7 @@
   width: 100%;
   box-sizing: border-box;
   background-repeat: no-repeat;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     min-height: 619px;
     background-image: url(../img/iphone-hand-tablet@1x.png);
     background-position: center bottom;
@@ -46,7 +46,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     align-items: flex-start;
   }
   @media (min-width: $desktop-width) {
@@ -75,7 +75,7 @@
   line-height: 29px;
   font-weight: 300;
   margin: 0;
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     min-height: 396px;
     padding-bottom: 0px;
     padding-top: 23px;
@@ -84,7 +84,7 @@
     background-position: center bottom;
     background-size: cover;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin: 0 auto;
     max-width: 247px;
     margin-bottom: 30px;
@@ -102,7 +102,7 @@
 
 .download__download-icons {
   position: relative;
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     padding: 0 20px;
     padding-top: 29px;
     padding-bottom: 31px;

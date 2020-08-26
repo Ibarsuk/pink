@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 490px;
     padding-top: 91px;
     padding-bottom: 72px;
@@ -21,7 +21,7 @@
 }
 
 .form-description__hidden-text {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     display: none;
   }
 }

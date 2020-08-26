@@ -1,5 +1,5 @@
 .download-icons {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     background-color: var(--color-1D2631);
   }
 }
@@ -11,13 +11,13 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     margin-top: 32px;
     margin-bottom: 16px;
     padding-left: 19px;
     padding-right: 20px;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-top: 47px;
     margin-bottom: 27px;
     padding: 0 30px;
