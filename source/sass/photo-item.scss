@@ -12,7 +12,7 @@
     width: 300px;
     max-width: 320px;
   }
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -21,9 +21,9 @@
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       margin-bottom: 30px;
-      &--day-panorama img {
+      & img {
         height: fit-content;
       }
     }
@@ -35,7 +35,7 @@
   display: block;
   width: 100%;
   height: auto;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     .photo-item--day-panorama & {
       min-height: 509px;
     }
@@ -59,7 +59,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     top: 57px;
   }
   @media (min-width: $desktop-width) {
@@ -72,7 +72,7 @@
   width: 100%;
   max-width: 940px;
   box-sizing: border-box;
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-max-width) {
     padding-left: 20px;
     padding-right: 20px;
   }

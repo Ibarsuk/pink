@@ -13,7 +13,7 @@
     font-size: 18px;
     padding-top: 91px;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 570px;
     margin: 0 auto;
     padding-bottom: 67px;

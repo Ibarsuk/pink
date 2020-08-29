@@ -3,7 +3,7 @@
   line-height: 30px;
   color: var(--dark-red);
   text-transform: uppercase;
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     margin-left: 23px;
   }
 }

@@ -1,6 +1,5 @@
 .effect {
-
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     display: none;
   }
   @media (min-width: $desktop-width) {
@@ -20,7 +19,7 @@
   background-repeat: no-repeat;
   &::before {
     content: '24';
-    font-weight: bold;
+    font-family: "Opensansbold";
     font-size: 96px;
     line-height: 163px;
     color: var(--dark-red);
@@ -43,31 +42,42 @@
       left: 23px;
     }
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding-left: 324px;
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    padding-bottom: 22px;
+    padding-top: 96px;
+    padding-left: 311px;
     background-size: 238px auto;
     background-position: left bottom;
   }
   @media (min-width: $desktop-width) {
-    padding-left: 500px;
+    padding-left: 370px;
     background-size: 298px auto;
     background-position: left 67px;
-    padding-top: 147px;
-    padding-bottom: 120px;
+    padding-top: 104px;
+    padding-bottom: 112px;
+    background-position: left 9px;
   }
 }
 
 .effect__title {
   margin-top: 0;
   color: var(--black);
-  font-weight: bold;
+  font-family: "Opensansbold";
   font-size: 30px;
   line-height: 36px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    max-width: 168px;
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    margin-bottom: 10px;
   }
   @media (min-width: $desktop-width) {
     line-height: 30px;
+    margin-bottom: 7px;
+  }
+}
+
+.effect__title br {
+  display: none;
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    display: inline;
   }
 }
 
@@ -79,6 +89,13 @@
     max-width: 534px;
     font-size: 18px;
     line-height: 30px;
+  }
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 

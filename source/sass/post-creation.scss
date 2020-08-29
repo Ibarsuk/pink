@@ -5,7 +5,7 @@
   align-items: center;
   padding-top: 29px;
   width: 100%;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-top: 54px;
   }
   @media (min-width: $desktop-width) {
@@ -20,7 +20,7 @@
   color: var(--dark-blue);
   margin: 0;
   margin-bottom: 42px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     font-size: 18px;
     margin-bottom: 70px;
   }
@@ -39,11 +39,11 @@
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: var(--grey-light);
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     width: inherit;
     flex-direction: column;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-top: 42px;
     padding-bottom: 11px;
     margin-bottom: 5px;
@@ -56,7 +56,7 @@
 
 .post-creation__flex-container {
   width: 100%;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     width: 50%;
   }
   @media (min-width: $desktop-width) {
@@ -80,7 +80,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 38px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-top: 15px;
     padding-right: 11px;
   }
@@ -136,7 +136,7 @@
     padding-left: 20px;
     padding-right: 0;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-top: 0;
     padding-left: 35px;
   }
@@ -171,10 +171,10 @@
     left: 4px;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 48 48' enable-background='new 0 0 48 48' xml:space='preserve'%3E%3Cpath fill='%23D22856' d='M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z'/%3E%3C/svg%3E");
-    @media (max-width: $tablet-width) {
+    @media (max-width: $phone-width) {
       display: none;
     }
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       width: 22px;
       height: 22px;
     }
@@ -194,7 +194,7 @@
     left: 3px;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 48 48' enable-background='new 0 0 48 48' xml:space='preserve'%3E%3Cpath fill='%23D22856' d='M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z'/%3E%3Crect fill='%23D22856' y='40' width='48' height='3'/%3E%3C/svg%3E");
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       width: 24px;
       height: 22px;
     }
@@ -214,7 +214,7 @@
     left: 7px;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='-35.422 -7.96 31.92 31.92' enable-background='new -35.422 -7.96 31.92 31.92' xml:space='preserve'%3E%3Cpath fill='%23D22856' d='M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z'/%3E%3Cpath fill='%23D22856' d='M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519'/%3E%3C/svg%3E");
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       width: 16px;
       height: 16px;
     }
@@ -246,7 +246,7 @@
   &:active {
     background-color: var(--dark-red);
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     &--crop {
       left: 73%;
     }
@@ -269,7 +269,7 @@
   @media (min-width: $tablet-width) {
     border-top: none;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-top: 35px;
   }
   @media (min-width: $desktop-width) {
@@ -283,7 +283,7 @@
   padding-right: 20px;
   width: 100%;
   box-sizing: border-box;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-left: 35px;
     padding-right: 35px;
   }
@@ -322,7 +322,7 @@
       color: var(--white-transparent);
       background-color: var(--dark-red);
     }
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       margin-bottom: 25px;
     }
   }

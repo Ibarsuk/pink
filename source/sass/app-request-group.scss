@@ -1,7 +1,7 @@
 .app-request-group {
   @include fieldset-fix;
   width: 100%;
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     padding-left: 22px;
     padding-right: 22px;
   }

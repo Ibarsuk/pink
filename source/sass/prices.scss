@@ -20,12 +20,20 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1200 94.074' enable-background='new 0 0 1200 94.074' xml:space='preserve'%3E%3Cpolygon fill='%23ffffff' points='1200,0 0,0 0,94.074 '/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: cover;
+    @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+      height: 52px;
+    }
+    @media (min-width: $desktop-width) {
+      height: 95px;
+    }
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-bottom: 70px;
+    padding-top: 101px;
   }
   @media (min-width: $desktop-width) {
     padding-bottom: 98px;
+    padding-top: 152px;
   }
 }
 
@@ -38,7 +46,7 @@
 
 .prices__item--description-column {
   align-self: flex-end;
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     display: none;
   }
 }
@@ -59,11 +67,14 @@
   overflow: hidden;
   min-width: 276px;
   min-height: 98px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    min-width: 152px;
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    min-width: 154px;
+    min-height: 78px;
+    border-right: 1px solid var(--grey);
   }
   @media (min-width: $desktop-width) {
-    min-width: 233px;
+    min-width: 235px;
+    border-right: 1px solid var(--grey);
   }
 }
 
@@ -94,6 +105,11 @@
   text-transform: uppercase;
   color: var(--white);
   margin-top: 12px;
+  @media (min-width: $desktop-width) {
+    font-family: "Opensansbold";
+    font-size: 18px;
+    margin-top: 16px;
+  }
 }
 
 .prices__cost {
@@ -104,11 +120,17 @@
   color: var(--white);
   text-align: center;
   margin-top: -3px;
+  @media (min-width: $desktop-width) {
+    font-family: "Opensanslight";
+    font-size: 24px;
+    margin-top: 1px;
+    margin-left: 3px;
+  }
 }
 
 .prices__table-cell {
   box-sizing: border-box;
-  border: 2px solid var(--grey);
+  border: 1px solid var(--grey);
   background-color: var(--white);
   display: flex;
   justify-content: space-between;
@@ -116,8 +138,8 @@
   padding-left: 18px;
   padding-right: 15px;
   min-height: 61px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    min-height: 45px;
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    min-height: 47px;
   }
   @media (min-width: $tablet-width) {
     justify-content: center;
@@ -125,8 +147,11 @@
   &--description-column {
     justify-content: flex-start;
     min-width: 153px;
+    padding-left: 14px;
     @media (min-width: $desktop-width) {
       min-width: 233px;
+      padding-left: 19px;
+      padding-top: 0;
     }
   }
 }

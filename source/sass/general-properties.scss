@@ -1,5 +1,6 @@
-$phone-width: 320px;
+$phone-width: 659px;
 $tablet-width: 660px;
+$tablet-max-width: 1199px;
 $desktop-width: 1200px;
 
 @mixin list-fix() {
@@ -44,7 +45,7 @@ img {
 
 .width-wrapper {
   margin: 0 auto;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 620px;
   }
   @media (min-width: $desktop-width) {

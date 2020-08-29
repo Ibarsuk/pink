@@ -1,5 +1,5 @@
 .download-icons {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     background-color: var(--color-1D2631);
   }
 }
@@ -11,19 +11,21 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  @media (max-width: $tablet-width) {
+  @media (max-width: $phone-width) {
     margin-top: 32px;
     margin-bottom: 16px;
     padding-left: 19px;
     padding-right: 20px;
   }
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    margin-top: 46px;
-    margin-bottom: 38px;
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    margin-top: 47px;
+    margin-bottom: 27px;
+    padding: 0 30px;
   }
   @media (min-width: $desktop-width) {
-    margin-top: 67px;
-    margin-bottom: 58px;
+    margin-top: 71px;
+    margin-bottom: 44px;
+    padding: 0 30px;
   }
 }
 
@@ -34,5 +36,8 @@
   margin: 0;
   text-align: center;
   color: var(--white);
-  font-family: Opensanslight;
+  font-family: "Opensanslight";
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }

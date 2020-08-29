@@ -1,6 +1,6 @@
 .page-success {
   max-height: 380px;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-height: 432px;
   }
   @media (min-width: $desktop-width) {
@@ -9,7 +9,7 @@
 }
 
 .page-success__title {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 395px;
   }
   @media (min-width: $desktop-width) {
@@ -18,7 +18,7 @@
 }
 
 .page-success__description {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 322px;
   }
   @media (min-width: $desktop-width) {

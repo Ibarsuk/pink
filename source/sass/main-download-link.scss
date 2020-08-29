@@ -20,4 +20,7 @@
   &:active {
     color: var(--dark-red-transparent)
   }
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
 }
