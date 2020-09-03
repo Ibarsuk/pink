@@ -9,18 +9,13 @@
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page-body">
-    <svg style="display: none">
-      <symbol viewBox="521.939 473.064 12.545 11.99" id="icon-heart">
-        <path fill="#D22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-      </symbol>
-    </svg>
     <header class="page-header">
       <nav class="page-header__nav main-nav main-nav--opened">
         <ul class="main-nav__list">
           <li class="main-nav__logo-button">
             <a href="#" class="page-header__logo-link">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                 <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
                 <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения" >
               </picture>
@@ -53,10 +48,10 @@
             <a href="#" class="photo-item__img-container">
               <span class="photo-item__day-panorama">Панорама дня</span>
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop_1x.webp 1x, img/panorama-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop_1x.webp 1x, img/panorama-desktop_2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet_1x.webp 1x, img/panorama-tablet_2x.webp 2x">
                 <source type="image/webp" srcset="img/panorama-mobile_1x.webp 1x, img/panorama-mobile_2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
                 <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
@@ -71,8 +66,8 @@
                 <p class="photo-item__likes">
                   <label class="photo-item__like-label">
                     <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                    <svg width="13px" height="12px">
-                      <use xlink:href="#icon-heart"></use>
+                    <svg width="13px" height="12px" class="photo-item__heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
                     </svg>
                   </label>
                   Нравится:
@@ -86,10 +81,10 @@
           <li class="photos-list__item photo-item photo-item--car">
             <a href="#" class="photo-item__img-container">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop_1x.webp 1x, img/photo-car-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop_1x.webp 1x, img/photo-car-desktop_2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet_1x.webp 1x, img/photo-car-tablet_2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-car-mobile_1x.webp 1x, img/photo-car-mobile_2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                 <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
@@ -103,8 +98,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg width="13px" height="12px">
-                    <use xlink:href="#icon-heart"></use>
+                  <svg width="13px" height="12px" class="photo-item__heart">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </label>
                 <span>
@@ -117,10 +112,10 @@
           <li class="photos-list__item photo-item photo-item--drumset">
             <a href="#" class="photo-item__img-container">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop_1x.webp 1x, img/photo-drumset-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop_1x.webp 1x, img/photo-drumset-desktop_2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet_1x.webp 1x, img/photo-drumset-tablet_2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-drumset-mobile_1x.webp 1x, img/photo-drumset-mobile_2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                 <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
@@ -134,8 +129,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg width="13px" height="12px">
-                    <use xlink:href="#icon-heart"></use>
+                  <svg width="13px" height="12px" class="photo-item__heart">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </label>
                 <span>
@@ -148,10 +143,10 @@
           <li class="photos-list__item photo-item photo-item--window">
             <a href="#" class="photo-item__img-container">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop_1x.webp 1x, img/photo-window-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop_1x.webp 1x, img/photo-window-desktop_2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet_1x.webp 1x, img/photo-window-tablet_2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-window-mobile_1x.webp 1x, img/photo-window-mobile_2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                 <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
@@ -165,8 +160,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg width="13px" height="12px">
-                    <use xlink:href="#icon-heart"></use>
+                  <svg width="13px" height="12px" class="photo-item__heart">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </label>
                 <span>
@@ -179,10 +174,10 @@
           <li class="photos-list__item photo-item photo-item--fair">
             <a href="#" class="photo-item__img-container">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop_1x.webp 1x, img/photo-fair-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop_1x.webp 1x, img/photo-fair-desktop_2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet_1x.webp 1x, img/photo-fair-tablet_2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-fair-mobile_1x.webp 1x, img/photo-fair-mobile_2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                 <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
@@ -196,8 +191,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg width="13px" height="12px">
-                    <use xlink:href="#icon-heart"></use>
+                  <svg width="13px" height="12px" class="photo-item__heart">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </label>
                 <span>
@@ -210,10 +205,10 @@
           <li class="photos-list__item photo-item photo-item--pov">
             <a href="#" class="photo-item__img-container">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop_1x.webp 1x, img/photo-pov-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop_1x.webp 1x, img/photo-pov-desktop_2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet_1x.webp 1x, img/photo-pov-tablet_2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-pov-mobile_1x.webp 1x, img/photo-pov-mobile_2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                 <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
@@ -227,8 +222,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg width="13px" height="12px">
-                    <use xlink:href="#icon-heart"></use>
+                  <svg width="13px" height="12px" class="photo-item__heart">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </label>
                 <span>
@@ -241,10 +236,10 @@
           <li class="photos-list__item photo-item photo-item--wing">
             <a href="#" class="photo-item__img-container">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop_1x.webp 1x, img/photo-wing-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop_1x.webp 1x, img/photo-wing-desktop_2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet_1x.webp 1x, img/photo-wing-tablet_2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-wing-mobile_1x.webp 1x, img/photo-wing-mobile_2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                 <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
@@ -258,8 +253,8 @@
               <p class="photo-item__likes">
                 <label class="photo-item__like-label">
                   <input class="photo-item__request" type="checkbox" name="like-checkbox" aria-label="Кнопка поставить лайк">
-                  <svg width="13px" height="12px">
-                    <use xlink:href="#icon-heart"></use>
+                  <svg width="13px" height="12px" class="photo-item__heart">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
                 </label>
                 <span>
@@ -277,12 +272,12 @@
         <form class="post-creation__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="post-creation__photo">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop_1x.webp 1x, img/photo-road-desktop_2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop_1x.webp 1x, img/photo-road-desktop_2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet_1x.webp 1x, img/photo-road-tablet_2x.webp 2x">
               <source type="image/webp" srcset="img/photo-road-mobile_1x.webp 1x, img/photo-road-mobile_2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-              <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото, выбранное для публикации">
+              <img class="post-creation__photo-img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото, выбранное для публикации">
             </picture>
           </div>
           <div class="post-creation__flex-container">
@@ -342,33 +337,29 @@
     <footer class="page-footer">
       <a href="index.html" aria-label="Логотип приложения PINK" class="page-footer__logo-link logo-link">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
           <img src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения PINK">
         </picture>
       </a>
       <ul class="page-footer__nets-list nets-list">
         <li class="nets-list__nets-item nets-list__nets-item--twitter">
           <a href="#" class="nets-list__nets-link" aria-label="Ссылка на наш twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="14px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-              <g>
-                <g>
-                  <path class="nets-list__path" fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
-                </g>
-              </g>
+            <svg width="18px" height="14px">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="nets-list__nets-item nets-list__nets-item--facebook">
           <a href="#" class="nets-list__nets-link" aria-label="Ссылка на наш facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9px" height="18px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
-              <path class="nets-list__path" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+            <svg width="9px" height="18px">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="nets-list__nets-item nets-list__nets-item--youtube">
           <a href="#" class="nets-list__nets-link" aria-label="Ссылка на наш youtube">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="13px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
-              <path class="nets-list__path" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+            <svg width="15px" height="13px">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -380,5 +371,6 @@
         </svg>
       </a>
     </footer>
+    <script src="js/nav-close.js"></script>
   </body>
 </html>
