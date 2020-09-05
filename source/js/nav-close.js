@@ -1,5 +1,6 @@
-let navButton = document.querySelector('.main-nav__toggle');
+let navButton = document.querySelector('.page-header__toggle');
 let mainNav = document.querySelector('.main-nav');
+let logoButton = document.querySelector('.page-header__logo-button');
 
 window.onload = function () {
   mainNav.classList.remove('main-nav--opened')
@@ -7,8 +8,10 @@ window.onload = function () {
 
 navButton.addEventListener("click", function(evt) {
   if (mainNav.classList.contains('main-nav--opened')) {
-    mainNav.classList.remove('main-nav--opened')
+    mainNav.classList.remove('main-nav--opened');
+    logoButton.classList.remove('page-header__logo-button--menu-open')
   } else {
-    mainNav.classList.add('main-nav--opened')
+    mainNav.classList.add('main-nav--opened');
+    logoButton.classList.add('page-header__logo-button--menu-open')
   }
 });
