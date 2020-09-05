@@ -15,15 +15,15 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-position: top center;
   background-size: cover;
-  min-height: 171px;
+  min-height: 237px;
   margin: 0;
-  padding-top: 28px;
+  padding-top: 94px;
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     background-image: url(../img/bg-back-tablet@1x.jpg);
-    min-height: 330px;
+    min-height: 440px;
     font-size: 50px;
     line-height: 68px;
-    padding-top: 66px;
+    padding-top: 177px;
     @media (min-resolution: 2dppx) {
       background-image: url(../img/bg-back-tablet@2x.jpg);
     }

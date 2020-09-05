@@ -91,6 +91,10 @@
   }
 }
 
+.post-creation__photo-img {
+  background-color: var(--grey);
+}
+
 .post-creation__options-list {
   @include list-fix;
   display: flex;
