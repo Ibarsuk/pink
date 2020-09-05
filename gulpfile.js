@@ -74,7 +74,7 @@ gulp.task("sprite", function(){
   .pipe(gulp.dest("source/img"))
 });
 
-gulp.task("build", gulp.series("clean","htmlmin","jsmin","sprite","copy","styles"));
+gulp.task("build", gulp.series("clean","htmlmin","jsmin","sprite","styles","copy"));
 
 gulp.task("server", function(done){
   sync.init({
