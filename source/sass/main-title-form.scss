@@ -10,12 +10,13 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-position: top center;
   background-size: cover;
-  min-height: 171px;
+  min-height: 237px;
   margin: 0;
   padding: 0 20px;
+  padding-top: 66px;
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     background-image: url(../img/bg-back-tablet@1x.jpg);
-    min-height: 330px;
+    min-height: 440px;
     font-size: 50px;
     line-height: 68px;
     @media (min-resolution: 2dppx) {
@@ -46,12 +47,12 @@
     font-size: 50px;
     line-height: 68px;
     max-width: 620px;
-    margin-top: 67px;
+    margin-top: 111px;
   }
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
     max-width: 747px;
-    margin-top: 169px;
+    margin-top: 103px;
   }
 }
