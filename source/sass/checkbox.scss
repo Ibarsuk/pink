@@ -7,7 +7,7 @@
   position: absolute;
   border-radius: 1px;
   &:hover,
-  &:focus {
+  input:focus + & {
     border-color: var(--dark-blue);
   }
   &:active {
