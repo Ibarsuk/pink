@@ -1,8 +1,10 @@
 .page-success {
   max-height: 380px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-height: 432px;
   }
+
   @media (min-width: $desktop-width) {
     max-height: 377px;
   }
@@ -12,6 +14,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 395px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 100%;
   }
@@ -21,17 +24,18 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 322px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 472px;
   }
 }
 
 .page-success__button-container {
-    width: 100%;
-    padding: 52px 0;
-    background-color: var(--grey-light);
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  padding: 52px 0;
+  background-color: var(--grey-light);
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

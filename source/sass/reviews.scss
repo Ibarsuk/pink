@@ -1,14 +1,17 @@
 .reviews {
   padding: 41px 20px 38px 20px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-top: 100px;
     padding-bottom: 22px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 184px;
     position: relative;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       opacity: 0.1;
       width: 79px;
@@ -41,19 +44,24 @@
   cursor: pointer;
   display: none;
   opacity: 0.3;
+
   &--left {
     margin-right: 100px;
   }
+
   &--right {
     margin-left: 100px;
   }
+
   &:hover,
   &:focus {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.1;
   }
+
   @media (min-width: $desktop-width) {
     display: block;
   }
@@ -77,6 +85,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   @media (min-width: $desktop-width) {
     max-width: 688px;
   }
@@ -90,17 +99,20 @@
   line-height: 30px;
   text-align: center;
   color: var(--black);
+
   @media (max-width: $phone-width) {
     order: -1;
     margin-bottom: 13px;
   }
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-    font-family: "Opensansbold";
+    font-family: "Opensansbold", sans-serif;
     font-size: 20px;
     letter-spacing: 0;
   }
+
   @media (min-width: $desktop-width) {
-    font-family: "Opensansbold";
+    font-family: "Opensansbold", sans-serif;
     font-size: 24px;
     letter-spacing: 0;
   }
@@ -110,35 +122,39 @@
   font-size: 14px;
   line-height: 30px;
   color: var(--dark-blue);
+
   @media (max-width: $phone-width) {
     display: none;
   }
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-    font-family: "Opensanslight";
-    margin-top: 0px;
+    font-family: "Opensanslight", sans-serif;
+    margin-top: 0;
   }
+
   @media (min-width: $desktop-width) {
-    font-family: "Opensanslight";
+    font-family: "Opensanslight", sans-serif;
     font-size: 18px;
   }
 }
 
 .reviews__comment {
   margin: 0;
-  font-size: 14px;
-  line-height: 30px;
   text-align: center;
   color: var(--dark-blue);
   margin-bottom: 50px;
   font-size: 18px;
   line-height: 30px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-bottom: 36px;
   }
+
   @media (max-width: $phone-width) {
     margin-bottom: 0;
     font-size: 14px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 36px;
   }
@@ -147,6 +163,7 @@
 .reviews__toggles {
   margin: 0;
   margin-top: 34px;
+
   @media (min-width: $desktop-width) {
     display: none;
   }

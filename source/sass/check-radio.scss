@@ -7,10 +7,12 @@
   position: absolute;
   border-radius: 50%;
   outline-style: none;
+
   &:hover,
   input:focus + & {
     border-color: var(--dark-blue);
   }
+
   &:active {
     border-color: var(--dark-red);
   }

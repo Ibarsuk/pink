@@ -2,10 +2,11 @@
   position: relative;
   margin: 0 auto;
   padding: 0;
-  font-family: "Opensans", Arial sans-serif;
+  font-family: "Opensans", "Arial", sans-serif;
   background-color: var(--white);
   min-height: 100%;
   min-width: 320px;
+
   &--grid {
     display: grid;
     grid-template-rows: min-content 1fr min-content;

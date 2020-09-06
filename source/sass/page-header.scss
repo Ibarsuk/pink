@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-bottom: -109px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: -110px;
     background-color: var(--black-transparent);
@@ -17,6 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   @media (min-width: $desktop-width) {
     max-width: 980px;
     margin: 0 auto;
@@ -31,16 +33,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     min-height: 109px;
   }
+
   @media (max-width: $tablet-max-width) {
     background-color: var(--black-transparent);
+
     &--menu-open {
       background-color: var(--dark-blue);
-      box-shadow: 0px 1px 0px var(--black), inset 0px 1px 0px var(--menu-shadow);
+      box-shadow: 0 1px 0 var(--black), inset 0 1px 0 var(--menu-shadow);
     }
   }
+
   @media (min-width: $desktop-width) {
     padding: 0;
     margin-top: -8px;
@@ -50,9 +56,11 @@
 
 .page-header__logo-link {
   margin-top: 7px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-top: 0;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: -3px;
   }
@@ -66,12 +74,15 @@
   position: relative;
   height: 24px;
   width: 54px;
+
   &:active {
     opacity: 0.3;
   }
-  &:hover path{
+
+  &:hover path {
     fill: var(--dark-red);
   }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -86,6 +97,7 @@
 .page-header__toggle-cross {
   display: none;
   margin-left: 31px;
+
   .page-header__logo-button--menu-open & {
     display: block;
   }
@@ -94,18 +106,22 @@
 .page-header__logo {
   width: 74px;
   height: 23px;
+
   &:hover path {
     fill: var(--dark-red);
   }
+
   &:active path {
     fill: var(--white);
     opacity: 0.3;
   }
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     width: 145px;
     height: 40px;
-    margin-top: -10px
+    margin-top: -10px;
   }
+
   @media (min-width: $desktop-width) {
     width: 147px;
     height: 40px;
@@ -118,14 +134,18 @@
       display: none;
     }
   }
+
   &--tablet {
     display: none;
+
     @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       display: block;
     }
   }
+
   &--desktop {
     display: none;
+
     @media (min-width: $desktop-width) {
       display: block;
     }

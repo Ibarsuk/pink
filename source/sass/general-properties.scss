@@ -19,8 +19,8 @@ $desktop-width: 960px;
 
 @mixin input-cut() {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  --webkit-appearance: none;
+  --moz-appearance: none;
   appearance: none;
 }
 
@@ -45,9 +45,11 @@ img {
 
 .width-wrapper {
   margin: 0 auto;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 620px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 940px;
   }

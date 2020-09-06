@@ -3,9 +3,11 @@
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-height: 363px;
   }
+
   @media (min-width: $desktop-width) {
     max-height: 377px;
     padding-bottom: 0;
@@ -18,6 +20,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 260px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 100%;
   }
@@ -25,9 +28,11 @@
 
 .page-error__description {
   margin-bottom: 40px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: 322px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 355px;
     margin-bottom: 0;

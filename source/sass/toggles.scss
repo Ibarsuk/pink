@@ -1,5 +1,6 @@
 .toggles {
   background-color: black;
+
   @include list-fix;
   display: flex;
 }
@@ -7,6 +8,7 @@
 .toggles__item {
   position: relative;
   margin-right: 27px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -14,6 +16,7 @@
 
 .toggles__input {
   @include input-cut;
+
   &:checked + .toggles__span {
     background-color: var(--white);
     border: 3px solid var(--dark-blue);
@@ -31,9 +34,11 @@
   background-color: var(--dark-blue);
   opacity: 0.3;
   border-radius: 50%;
+
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.1;
   }

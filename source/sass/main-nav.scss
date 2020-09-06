@@ -1,5 +1,6 @@
 .main-nav__list {
   box-sizing: border-box;
+
   @include list-fix;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@
   color: var(--white);
   width: 100%;
   text-transform: uppercase;
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -21,18 +23,21 @@
 
 .main-nav__item {
   position: relative;
+
   @media (max-width: $tablet-max-width) {
     display: none;
     background-color: var(--dark-blue);
-    box-shadow: 0px 1px 0px var(--black), inset 0px 1px 0px var(--menu-shadow);
+    box-shadow: 0 1px 0 var(--black), inset 0 1px 0 var(--menu-shadow);
   }
+
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+
     &--active::after {
       position: absolute;
       left: 54px;
       bottom: 4px;
-      content: '';
+      content: "";
       background-color: var(--white);
       height: 2px;
       width: calc(100% - 73px);
@@ -52,16 +57,20 @@
   display: block;
   color: inherit;
   text-decoration: none;
+
   &:hover,
   &:focus {
     color: var(--dark-red);
   }
+
   &:active {
     opacity: 0.3;
+
     @media (min-width: $desktop-width) {
       color: var(--white);
     }
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 57px;
     padding-right: 18px;
@@ -69,6 +78,6 @@
     line-height: 18px;
     text-transform: none;
     font-weight: normal;
-    font-family: "Opensanslight";
+    font-family: "Opensanslight", sans-serif;
   }
 }

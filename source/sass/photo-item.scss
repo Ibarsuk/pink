@@ -8,21 +8,26 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+
   @media (min-width: $tablet-width) {
     width: 300px;
     max-width: 320px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 26px;
     padding-bottom: 26px;
   }
+
   &--day-panorama {
     width: 100%;
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
+
     @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       margin-bottom: 30px;
+
       & img {
         height: fit-content;
       }
@@ -36,6 +41,7 @@
   width: 100%;
   height: auto;
   background-color: var(--grey);
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     .photo-item--day-panorama & {
       min-height: 509px;
@@ -46,9 +52,8 @@
 .photo-item__day-panorama {
   word-spacing: 2px;
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 20px;
-  display: block;
   width: 140px;
   height: 36px;
   background-color: var(--dark-red);
@@ -60,9 +65,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     top: 57px;
   }
+
   @media (min-width: $desktop-width) {
     top: 54px;
     right: 130px;
@@ -73,6 +80,7 @@
   width: 100%;
   max-width: 940px;
   box-sizing: border-box;
+
   @media (max-width: $tablet-max-width) {
     padding-left: 20px;
     padding-right: 20px;
@@ -93,12 +101,14 @@
   padding-top: 18px;
   padding-bottom: 18px;
   box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-top: 22px;
     min-height: 155px;
     padding-bottom: 22px;
     justify-content: flex-start;
+
     .photo-item--day-panorama & {
       flex-direction: row;
       flex-wrap: wrap;
@@ -107,6 +117,7 @@
       padding-bottom: 14px;
       min-height: 121px;
       justify-content: space-between;
+
       @media (min-width: $tablet-width) {
         min-height: 96px;
       }
@@ -139,6 +150,7 @@
   margin-bottom: 11px;
   font-size: 14px;
   line-height: 24px;
+
   @media (min-width: $tablet-width) {
     .photo-item--day-panorama & {
       order: 3;
@@ -152,6 +164,7 @@
   line-height: 24px;
   color: var(--dark-red);
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -162,6 +175,7 @@
 
 .photo-item__like-label {
   margin-right: 15px;
+
   @media (min-width: $tablet-width) {
     order: 1;
     margin-left: 16px;

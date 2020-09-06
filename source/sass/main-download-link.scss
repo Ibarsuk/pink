@@ -12,14 +12,17 @@
   border: 3px solid var(--white);
   border-radius: 29px;
   padding: 15px 15px;
+
   &:hover,
   &:focus {
     color: var(--dark-red);
     background-color: var(--white);
   }
+
   &:active {
-    color: var(--dark-red-transparent)
+    color: var(--dark-red-transparent);
   }
+
   @media (min-width: $desktop-width) {
     font-size: 21px;
   }

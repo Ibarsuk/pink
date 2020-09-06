@@ -1,19 +1,23 @@
 .app-request-group {
   @include fieldset-fix;
   width: 100%;
+
   @media (max-width: $phone-width) {
     padding-left: 22px;
     padding-right: 22px;
   }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding-left: 51px;
   }
+
   @media (min-width: $tablet-width) {
     background-color: var(--transparent);
     border: 2px solid var(--grey);
     padding-bottom: 58px;
     padding-top: 9px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 65px;
     min-height: 297px;
@@ -22,6 +26,7 @@
 
 .app-request-group__request-title {
   margin-bottom: 39px;
+
   @media (min-width: $tablet-width) {
     padding: 0 19px;
   }
@@ -33,6 +38,7 @@
 
 .app-request-group__request-item {
   margin-bottom: 45px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -48,6 +54,7 @@
 
 .app-request-group__check-radio {
   margin-left: -68px;
+
   @media (min-width: $tablet-width) {
     margin-left: -59px;
   }

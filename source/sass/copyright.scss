@@ -6,13 +6,16 @@
   line-height: 18px;
   text-decoration: none;
   color: var(--dark-blue);
+
   &:hover .copyright__path,
   &:focus .copyright__path {
-  fill: var(--black);
+    fill: var(--black);
   }
+
   &:active .copyright__path {
     opacity: 0.3;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }

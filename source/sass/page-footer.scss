@@ -8,14 +8,17 @@
   padding: 31px 20px;
   width: 100%;
   max-width: 940px;
+
   @media (max-width: $phone-width) {
     flex-direction: column;
     align-items: center;
   }
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-      padding-left: 20px;
-      padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-right: 0;
@@ -26,9 +29,11 @@
   @media (max-width: $phone-width) {
     margin-bottom: 32px;
   }
-  &:hover .logo-link__letter{
+
+  &:hover .logo-link__letter {
     fill: var(--dark-red);
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -38,9 +43,11 @@
   @media (max-width: $phone-width) {
     margin-bottom: 25px;
   }
+
   @media (min-width: $tablet-width) {
     margin-left: -13px;
   }
+
   @media (min-width: $desktop-width) {
     margin-left: 11px;
   }

@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-family: Opensanslight;
+  font-family: "Opensanslight", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -12,30 +12,34 @@
   color: var(--white);
   background-color: var(--dark-blue);
   background-repeat: no-repeat;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   background-size: cover;
   min-height: 237px;
   margin: 0;
   padding-top: 94px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     min-height: 440px;
     font-size: 50px;
     line-height: 68px;
     padding-top: 177px;
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
+
   @media (min-width: $desktop-width) {
-    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     height: 394px;
     font-size: 50px;
     line-height: 68px;
     padding-top: 169px;
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 }

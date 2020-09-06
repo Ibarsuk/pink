@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
@@ -11,6 +12,7 @@
 .nets-list__nets-item {
   margin-left: 8px;
   margin-bottom: 14px;
+
   &:first-child {
     margin-left: 0;
   }
@@ -24,9 +26,11 @@
   height: 48px;
   border-radius: 50%;
   border: 3px solid var(--grey-light);
+
   &:hover {
     border-color: var(--dark-blue);
   }
+
   &:active {
     opacity: 0.3;
     border-color: var(--grey-light);

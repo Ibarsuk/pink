@@ -7,13 +7,15 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  font-family: Opensanslight;
+  font-family: "Opensanslight", sans-serif;
   padding-left: 20px;
   padding-right: 20px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     font-size: 40px;
     line-height: 54px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
@@ -23,8 +25,10 @@
 .slogan-list__slogan-item {
   text-align: center;
   margin: 0;
+
   &--first {
     margin-bottom: 29px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
