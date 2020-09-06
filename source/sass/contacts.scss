@@ -154,17 +154,15 @@
   }
 }
 
-
-
 .contacts__map-bg {
   position: relative;
   top: -224px;
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     top: -117px;
   }
-   @media (min-width: $desktop-width) {
-     top: -33px;
-   }
+  @media (min-width: $desktop-width) {
+    top: -33px;
+  }
 }
 
 .contacts__map-iframe {

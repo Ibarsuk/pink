@@ -1,7 +1,7 @@
 .toggles {
- background-color: black;
- @include list-fix;
- display: flex;
+  background-color: black;
+  @include list-fix;
+  display: flex;
 }
 
 .toggles__item {

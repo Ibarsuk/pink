@@ -1,5 +1,6 @@
 .advantages-list {
   position: relative;
+
   @include list-fix;
   box-sizing: border-box;
   width: 100%;
@@ -11,24 +12,28 @@
   padding-right: 20px;
   padding-bottom: 318px;
   padding-top: 83px;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 109%;
+
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/iphone-screen-mobile@2x.png);
+    background-image: url("../img/iphone-screen-mobile@2x.png");
     background-size: 157px auto;
   }
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     align-items: flex-end;
     padding-bottom: 42px;
     padding-top: 76px;
-    background-image: url(../img/iphone-screen-3-tablet@1x.png);
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: 5% 5px;
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/iphone-screen-3-tablet@2x.png);
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-size: 268px auto;
     }
   }
+
   @media (min-width: $desktop-width) {
     justify-content: center;
     flex-direction: row;
@@ -42,9 +47,11 @@
 
 .advantages-list__item {
   margin-top: 31px;
+
   &:first-child {
     margin-top: 0;
   }
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-top: 34px;
     display: flex;
@@ -53,6 +60,7 @@
     align-items: flex-start;
     max-width: 310px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 252px;
     padding-top: 357px;
@@ -60,28 +68,34 @@
     margin-right: 68px;
     margin-top: 0;
     background-size: 291px auto;
+
     &--mood {
-      background-image: url(../img/iphone-screen-1-desktop@1x.png);
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: top center;
+
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/iphone-screen-1-desktop@2x.png);
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
       }
     }
+
     &--change {
-      background-image: url(../img/iphone-screen-2-desktop@1x.png);
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: top center;
+
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/iphone-screen-2-desktop@2x.png);
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
       }
     }
+
     &--friends {
-      background-image: url(../img/iphone-screen-3-desktop@1x.png);
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: top center;
+
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/iphone-screen-3-desktop@2x.png);
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
       }
     }
   }
@@ -94,8 +108,9 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+
   @media (min-width: $desktop-width) {
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 30px;
     line-height: 30px;
     font-family: "Opensansbold";
@@ -109,9 +124,11 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     text-align: left;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
