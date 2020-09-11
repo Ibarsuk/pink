@@ -1,4 +1,4 @@
-const gulp = require("gulp");
+const { src, dest, parallel, series, watch } = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
@@ -14,12 +14,14 @@ const htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
 
-gulp.task("clean", function() {
+function clean() {
   return del("build");
-});
+}
 
-gulp.task("copy", function(){
-  return gulp.src([
+exports.clean = clean;
+
+function copy() {
+  return src([
     "source/fonts/**/*.{woff,woff2}",
    "source/img/**",
    "source/*.ico",
@@ -27,11 +29,13 @@ gulp.task("copy", function(){
  ], {
  base: "source"
  })
-.pipe(gulp.dest("build"));
-});
+.pipe(dest("build"));
+}
 
-gulp.task('styles', function() {
-  return gulp.src("source/sass/style.scss")
+exports.copy = copy;
+
+function styles() {
+  return src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -41,43 +45,51 @@ gulp.task('styles', function() {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(dest("source/css"))
     .pipe(sync.stream());
-});
+}
 
-gulp.task('htmlmin', () => {
-  return gulp.src('source/*.html')
+exports.styles = styles;
+
+function htmlMin() {
+  return src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
-});
+    .pipe(dest('build'));
+}
 
-gulp.task('jsmin', function () {
+exports.htmlMin = htmlMin;
+
+function jsmin() {
   return pipeline(
-        gulp.src('source/js/*.js'),
+        src('source/js/*.js'),
         uglify(),
-        gulp.dest('build/js')
+        dest('build/js')
   );
-});
+}
 
-gulp.task("images", function(){
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+exports.jsmin = jsmin;
+
+function images() {
+  return src("source/img/**/*.{jpg,png,svg}")
   .pipe(imagemin([
   imagemin.optipng({optimizationLevel: 3}),
   imagemin.mozjpeg({progressive: true}),
   imagemin.svgo()
   ]))
-});
+}
 
-gulp.task("sprite", function(){
-  return gulp.src("source/img/**/icon-*.svg")
+exports.images = images;
+
+function sprite() {
+  return src("source/img/**/icon-*.svg")
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("source/img"))
-});
+  .pipe(dest("source/img"))
+}
 
-gulp.task("build", gulp.series("clean","htmlmin","jsmin","sprite","styles","copy"));
+exports.sprite = sprite;
 
-gulp.task("server", function(done){
+function server(done) {
   sync.init({
     server: {
       baseDir: 'source'
@@ -87,11 +99,16 @@ gulp.task("server", function(done){
     ui: false,
   });
   done();
-});
+}
 
-gulp.task("watcher", function(){
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-});
+exports.server = server;
 
-gulp.task("start", gulp.series("styles","server","watcher"));
+function watcher() {
+  watch("source/sass/**/*.scss", series("styles"));
+  watch("source/*.html").on("change", sync.reload);
+}
+
+exports.watcher = watcher;
+
+exports.start = parallel(styles, server, watcher);
+exports.build = series(clean, htmlMin, jsmin, sprite, styles, copy);
